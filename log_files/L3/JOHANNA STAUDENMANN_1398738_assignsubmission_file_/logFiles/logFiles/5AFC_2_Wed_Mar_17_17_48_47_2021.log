@@ -1,0 +1,34 @@
+Wed Mar 17 17:48:47 2021
+Sound File	Stimulus	Vowel	FirstResponse	Response Time	NbErreurs	Repetitions
+I_seek_H07	seek	I	I	1.9900029399432242	0	0
+a_tat_F07	tat	a	v	0.44000097701791674	1	0
+i_did_H07	did	i	i	1.5900020087137818	0	1
+I_seek_F05	seek	I	I	1.0100020510144532	0	0
+a_cad_F07	cad	a	v	0.6200010107131675	1	0
+a_cad_H09	cad	a	a	0.9700010012602434	0	1
+A_park_H04	park	A	v	0.7300010225735605	1	0
+i_tick_H04	tick	i	i	1.6000019231578335	0	0
+v_puck_H08	puck	v	v	2.3500040321378037	0	0
+a_pack_F09	pack	a	a	1.7800020488211885	0	0
+i_tick_H05	tick	i	i	1.550002118339762	0	0
+a_ban_F06	ban	a	A	3.5220200328622013	1	0
+v_tut_H09	tut	v	v	2.3800040716305375	0	0
+I_deed_H06	deed	I	I	1.400002006208524	0	0
+A_tart_F07	tart	A	A	2.0110029054339975	0	0
+a_ban_F05	ban	a	a	3.6450210283510387	0	0
+v_bun_H07	bun	v	v	1.2300020979018882	0	1
+v_puck_H05	puck	v	v	1.4710019453195855	0	1
+v_cut_F04	cut	v	a	0.760000919806771	1	0
+A_barn_F06	barn	A	A	1.8610031064599752	0	0
+A_barn_F08	barn	A	v	0.7700010591652244	2	1
+i_tick_F04	tick	i	i	1.4410021068761125	0	1
+i_did_F09	did	i	i	1.5700021071825176	0	0
+i_pick_F07	pick	i	i	1.3000020075123757	0	0
+i_kip_H06	kip	i	I	0.6100010798545554	1	1
+A_park_F06	park	A	A	1.9500029574846849	0	0
+I_peak_F08	peak	I	i	0.5100010262103751	1	1
+a_cat_H06	cat	a	a	1.5000019554281607	0	0
+i_pick_H08	pick	i	i	1.8300019309390336	0	0
+I_deed_F07	deed	I	I	1.7100018821656704	0	0
+
+#TotalErreurs#9#TempsTotal#2min 25sec

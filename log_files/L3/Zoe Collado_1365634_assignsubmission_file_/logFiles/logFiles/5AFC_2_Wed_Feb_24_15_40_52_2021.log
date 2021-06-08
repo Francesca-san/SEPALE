@@ -1,0 +1,34 @@
+Wed Feb 24 15:40:52 2021
+Sound File	Stimulus	Vowel	FirstResponse	Response Time	NbErreurs	Repetitions
+a_pack_F08	pack	a	a	0.7939157485961914	0	1
+v_cut_H06	cut	v	v	0.9302189350128174	0	0
+v_cud_H08	cud	v	v	0.9321751594543457	0	0
+a_cad_F05	cad	a	a	1.077869176864624	0	0
+v_tut_F04	tut	v	a	0.20752310752868652	1	0
+v_bun_F07	bun	v	v	1.2170600891113281	0	0
+i_tick_F04	tick	i	i	0.9332108497619629	0	0
+a_cat_H07	cat	a	a	1.1975278854370117	0	0
+A_barn_F06	barn	A	A	1.4461779594421387	0	0
+A_tart_F05	tart	A	A	0.8925449848175049	0	1
+v_tut_F05	tut	v	a	0.5044858455657959	1	0
+I_peak_H04	peak	I	i	0.20407605171203613	1	0
+v_tut_F09	tut	v	v	1.4525079727172852	0	1
+i_sick_H05	sick	i	i	1.191202163696289	0	0
+A_card_H08	card	A	A	0.8269941806793213	0	1
+v_tut_F06	tut	v	v	1.1304330825805664	0	0
+I_seek_H09	seek	I	I	1.1288471221923828	0	0
+a_cad_H07	cad	a	a	1.3870480060577393	0	0
+a_cat_F04	cat	a	a	0.8305637836456299	0	1
+A_park_H08	park	A	A	1.3688018321990967	0	0
+a_tat_H06	tat	a	a	1.0115361213684082	0	1
+i_tick_F08	tick	i	i	1.05855393409729	0	0
+i_sick_F08	sick	i	i	1.7479372024536133	0	0
+v_tut_H08	tut	v	v	1.2993190288543701	0	2
+I_seek_F09	seek	I	I	1.1062159538269043	0	0
+a_tat_F09	tat	a	a	1.0128169059753418	0	0
+a_pack_H08	pack	a	a	0.936608076095581	0	0
+v_tut_H07	tut	v	v	1.1253762245178223	0	0
+i_sick_F07	sick	i	i	1.1980030536651611	0	0
+v_bun_F08	bun	v	v	1.1246271133422852	0	0
+
+#TotalErreurs#3#TempsTotal#1min 36sec

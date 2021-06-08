@@ -1,0 +1,34 @@
+Mon May 03 10:50:40 2021
+Sound File	Stimulus	Vowel	FirstResponse	Response Time	NbErreurs	Repetitions
+I_mean_F05	mean	I	I	21.709086894989014	0	0
+A_mart_F04	mart	A	A	4.461977005004883	0	0
+A_mart_H09	mart	A	A	2.6529979705810547	0	0
+v_putt_H09	putt	v	v	5.48675799369812	0	0
+a_mat_H09	mat	a	a	6.377090692520142	0	0
+A_lark_F04	lark	A	A	5.653038024902344	0	0
+I_mean_F07	mean	I	I	3.356566905975342	0	0
+v_mutt_F07	mutt	v	v	3.9233758449554443	0	0
+a_cap_F07	cap	a	a	3.0046768188476562	0	0
+A_part_H05	part	A	A	1.7533457279205322	0	0
+v_mutt_F06	mutt	v	v	12.660051345825195	0	0
+A_bark_F09	bark	A	A	2.757781982421875	0	0
+a_cap_F04	cap	a	a	2.032243013381958	0	0
+i_lick_F05	lick	i	i	1.9476771354675293	0	0
+i_min_F08	min	i	i	5.93767786026001	0	0
+A_part_H07	part	A	A	4.782299995422363	0	0
+i_lick_H09	lick	i	i	7.281412124633789	0	0
+a_cap_H06	cap	a	a	3.2270450592041016	0	0
+I_leak_H06	leak	I	I	1.726564884185791	0	0
+I_bean_H06	bean	I	I	4.046250104904175	0	0
+v_cup_H08	cup	v	v	1.7668049335479736	0	0
+a_mat_H05	mat	a	a	1.2407140731811523	0	0
+v_mutt_H08	mutt	v	v	1.7996230125427246	0	0
+v_putt_H05	putt	v	v	3.8716917037963867	0	0
+I_bean_F09	bean	I	I	8.327364206314087	0	0
+a_back_H04	back	a	a	42.04776120185852	0	0
+A_mart_H04	mart	A	A	1.886404037475586	0	0
+v_mutt_H04	mutt	v	v	2.5895161628723145	0	0
+a_cap_H05	cap	a	a	1.2740120887756348	0	0
+i_bik_F09	bik	i	i	2.054311752319336	0	0
+
+#TotalErreurs#0#TempsTotal#3min 44sec

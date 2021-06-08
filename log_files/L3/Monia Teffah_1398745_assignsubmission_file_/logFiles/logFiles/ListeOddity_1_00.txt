@@ -1,0 +1,34 @@
+#00#Wed Feb 03 11:26:08 2021#ListeOddity_1.txt
+Vowel	Sound Files	Response	FirstResponse	Result	Response Time	NbErreurs	nbRepetitions
+i_min_F06-i_min_F05-I_mean_F07	I	3	3	1	1.613691806793213	0	0
+i_bin_H09-I_bean_H06-i_bin_H08	I	2	1	0	1.5186271667480469	3	1
+I_beak_H06-i_bik_H08-I_beak_H05	i	2	3	0	0.16596102714538574	3	1
+a_back_F08-a_back_F07-v_buck_F06	v	3	1	0	0.5627670288085938	2	3
+v_cup_H07-v_cup_H08-A_carp_H09	A	3	3	1	1.1097660064697266	0	0
+v_putt_H07-A_part_H09-A_part_H05	v	1	1	1	0.932196855545044	0	0
+v_luck_H05-a_lack_H06-v_luck_H07	a	2	3	0	1.183237075805664	2	0
+a_mat_H06-v_mutt_H07-v_mutt_H05	a	1	2	0	0.1487419605255127	3	3
+v_cup_H07-A_carp_H04-A_carp_H09	v	1	3	0	0.537757158279419	3	0
+v_luck_H05-a_lack_H04-a_lack_H08	v	1	1	1	1.3499257564544678	0	0
+A_mart_F08-v_mutt_F04-A_mart_F05	v	2	1	0	0.9302749633789062	2	3
+v_buck_H05-A_bark_H04-A_bark_H07	v	1	3	0	0.8570759296417236	2	1
+A_carp_F05-A_carp_F09-v_cup_F04	v	3	3	1	0.5025770664215088	0	1
+A_lark_F07-v_luck_F09-v_luck_F05	A	1	3	0	1.6300311088562012	2	3
+i_bik_H08-I_beak_H06-i_bik_H09	I	2	2	1	1.5752758979797363	0	3
+A_bark_H06-v_buck_H04-A_bark_H09	v	2	2	1	0.5133981704711914	0	1
+I_bean_H07-i_bin_H04-I_bean_H08	i	2	2	1	0.762324333190918	0	0
+i_bin_F08-i_bin_F09-I_bean_F07	I	3	3	1	0.9325911998748779	0	0
+I_cheap_H04-i_chip_H07-i_chip_H05	I	1	1	1	1.022270917892456	0	2
+i_bik_H08-i_bik_H05-I_beak_H04	I	3	3	1	1.8104908466339111	0	0
+a_cap_H05-a_cap_H07-v_cup_H09	v	3	1	0	0.20702123641967773	2	1
+v_cup_H06-a_cap_H07-a_cap_H04	v	1	1	1	1.470780849456787	0	0
+I_cheap_H04-i_chip_H09-I_cheap_H06	i	2	1	0	1.3644378185272217	2	2
+I_mean_H05-i_min_H04-i_min_H08	I	1	1	1	0.9191939830780029	0	1
+v_putt_F09-a_pat_F05-v_putt_F07	a	2	1	0	0.046827077865600586	3	2
+a_pat_H09-v_putt_H06-v_putt_H07	a	1	3	0	0.1438138484954834	3	3
+I_beak_F07-i_bik_F05-i_bik_F08	I	1	1	1	0.5859339237213135	0	1
+A_mart_F06-A_mart_F09-v_mutt_F07	v	3	3	1	1.0729448795318604	0	0
+I_leak_F09-i_lick_F04-I_leak_F07	i	2	2	1	1.5751261711120605	0	0
+v_luck_F04-v_luck_F08-A_lark_F06	A	3	2	0	1.7423169612884521	2	1
+
+#TotalErreurs#34TempsTotal#8min 0sec

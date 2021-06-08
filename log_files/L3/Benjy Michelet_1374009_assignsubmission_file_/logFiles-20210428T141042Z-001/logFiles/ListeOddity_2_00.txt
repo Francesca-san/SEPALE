@@ -1,0 +1,102 @@
+#00#Sun Mar  7 10:27:27 2021#ListeOddity_2.txt
+Vowel	Sound Files	Response	FirstResponse	Result	Response Time	NbErreurs	nbRepetitions
+i_tick_F08-i_tick_F05-I_teak_F04	I	3	3	1	2.8628665290307254	0	0
+v_tut_H09-v_tut_H05-a_tat_H06	a	3	3	1	1.2354691830696538	0	0
+v_tut_H05-v_tut_H07-A_tart_H08	A	3	3	1	1.1497028209269047	0	0
+a_lack_F06-a_lack_F05-v_puck_F09	v	3	3	1	0.4387727240100503	0	0
+i_pick_H07-I_peak_H09-I_peak_H04	i	1	1	1	0.9973779580323026	0	0
+v_tut_H05-A_tart_H08-A_tart_H06	v	1	2	0	0.037623289972543716	2	0
+v_cud_H07-a_cad_H08-v_cud_H04	a	2	2	1	0.3049591480521485	0	0
+a_ban_H06-v_bun_H04-a_ban_H08	v	2	3	0	0.42643545591272414	2	0
+A_park_H05-A_park_H04-v_puck_H08	v	3	3	1	1.2998337680473924	0	0
+a_ban_F09-v_bun_F06-v_bun_F07	a	1	1	1	1.3352565580280498	0	0
+A_barn_F07-v_bun_F06-A_barn_F05	v	2	2	1	1.888644083053805	0	0
+i_sick_F09-I_seek_F08-I_seek_F07	i	1	1	1	1.3753760569961742	0	0
+a_tat_F04-v_tut_F06-a_tat_F09	v	2	1	0	0.04003498493693769	2	0
+v_puck_H04-v_puck_H08-A_park_H06	A	3	3	1	1.3481370049994439	0	0
+a_cat_H05-v_cut_H08-v_cut_H07	a	1	1	1	2.49536886299029	0	0
+v_cud_F07-A_card_F04-A_card_F09	v	1	1	1	1.651289346977137	0	0
+a_ban_F08-a_ban_F06-v_bun_F04	v	3	3	1	2.029721669969149	0	0
+v_puck_H08-A_park_H06-A_park_H04	v	1	1	1	1.4350260579958558	0	0
+v_cut_F06-a_cat_F07-v_cut_F08	a	2	2	1	1.8807820529909804	0	0
+i_pick_H09-I_peak_H08-i_pick_H07	I	2	2	1	2.019235468003899	0	0
+v_cut_H06-v_cut_H09-a_cat_H08	a	3	3	1	2.519699578988366	0	0
+a_cad_H05-a_cad_H07-v_cud_H09	v	3	3	1	1.3654551720246673	0	0
+v_tut_F06-A_tart_F09-v_tut_F05	A	2	2	1	1.283892186009325	0	0
+v_bun_F05-v_bun_F07-a_ban_F08	a	3	3	1	1.4559247950091958	0	0
+I_seek_H09-i_sick_H08-i_sick_H06	I	1	1	1	1.3646174230379984	0	0
+i_tick_F09-I_teak_F07-I_teak_F06	i	1	1	1	1.49910082295537	0	0
+v_puck_F05-a_lack_F04-a_lack_F08	v	1	1	1	1.3723871069960296	0	0
+I_keep_H06-i_kip_H07-I_keep_H05	i	2	2	1	1.16164490301162	0	0
+v_cut_H05-A_cart_H04-A_cart_H07	v	1	1	1	1.6787100880173966	0	0
+I_teak_F06-i_tick_F08-I_teak_F05	i	2	2	1	1.4160460360581055	0	0
+
+#TotalErreurs#6TempsTotal#3min 9sec
+#00#Mon Mar  8 11:49:56 2021#ListeOddity_2.txt
+Vowel	Sound Files	Response	FirstResponse	Result	Response Time	NbErreurs	nbRepetitions
+v_cut_F05-A_cart_F09-v_cut_F04	A	2	2	1	1.895090274978429	0	0
+i_kip_H07-I_keep_H04-I_keep_H05	i	1	1	1	1.3251947560347617	0	0
+a_cad_H07-v_cud_H09-v_cud_H05	a	1	1	1	1.8501473580254242	0	0
+i_did_H09-I_deed_H06-i_did_H08	I	2	2	1	1.296942781074904	0	0
+A_park_H07-v_puck_H09-v_puck_H05	A	1	1	1	0.9872790479566902	0	0
+I_teak_F06-I_teak_F05-i_tick_F09	i	3	3	1	1.696701420005411	0	0
+i_tick_H08-I_teak_H06-i_tick_H09	I	2	2	1	2.9656512410147116	0	0
+a_cat_F04-v_cut_F08-a_cat_F07	v	2	2	1	1.8354761810041964	0	0
+v_cut_H05-A_cart_H04-A_cart_H07	v	1	1	1	1.9062408690806478	0	0
+a_cad_F07-v_cud_F09-v_cud_F05	a	1	1	1	3.019694283953868	0	0
+i_did_F08-i_did_F09-I_deed_F07	I	3	3	1	2.1029176330193877	0	0
+a_cad_H05-a_cad_H07-v_cud_H09	v	3	3	1	2.165990393026732	0	0
+a_lack_F06-a_lack_F05-v_puck_F09	v	3	3	1	1.096462904009968	0	0
+v_cud_H09-A_card_H08-v_cud_H05	A	2	2	1	2.111949961981736	0	0
+i_did_H04-I_deed_H09-I_deed_H07	i	1	1	1	2.044986690976657	0	0
+v_bun_H07-A_barn_H09-A_barn_H05	v	1	1	1	2.284733611973934	0	0
+i_tick_H08-i_tick_H05-I_teak_H04	I	3	3	1	1.6686424480285496	0	0
+v_cut_H04-v_cut_H05-A_cart_H09	A	3	3	1	1.5315279660280794	0	0
+v_cud_F06-a_cad_F07-a_cad_F04	v	1	1	1	1.747464417014271	0	0
+i_kip_F07-I_keep_F04-I_keep_F05	i	1	1	1	1.0568132610060275	0	0
+v_puck_H05-a_lack_H06-v_puck_H07	a	2	2	1	1.8174098610179499	0	0
+A_cart_F09-A_cart_F04-v_cut_F09	v	3	3	1	1.6118847669567913	0	0
+i_sick_F04-I_seek_F05-i_sick_F09	I	2	2	1	2.2682679570280015	0	0
+I_seek_H09-i_sick_H04-I_seek_H07	i	2	2	1	1.0124902030220255	0	0
+I_deed_F06-i_did_F09-i_did_F07	I	1	1	1	1.7282120389863849	0	0
+i_kip_F06-i_kip_F05-I_keep_F07	I	3	3	1	2.6472352059790865	0	0
+I_keep_F05-I_keep_F08-i_kip_F04	i	3	3	1	1.35010369902011	0	0
+A_barn_F07-v_bun_F06-A_barn_F05	v	2	2	1	2.5311635700054467	0	0
+v_cud_F05-v_cud_F06-a_cad_F07	a	3	3	1	1.1862602840410545	0	0
+i_tick_F08-i_tick_F05-I_teak_F04	I	3	3	1	2.1165826469659805	0	0
+
+#TotalErreurs#0TempsTotal#3min 9sec
+#00#Tue Mar 30 21:01:49 2021#ListeOddity_2.txt
+Vowel	Sound Files	Response	FirstResponse	Result	Response Time	NbErreurs	nbRepetitions
+a_tat_F04-a_tat_F05-v_tut_F08	v	3	3	1	1.4794752589950804	0	0
+i_pick_F09-I_peak_F08-i_pick_F07	I	2	2	1	103.29505952198815	0	0
+v_puck_H04-v_puck_H09-a_lack_H06	a	3	3	1	1.116600859008031	0	0
+i_kip_H06-i_kip_H05-I_keep_H07	I	3	3	1	2.02134082900011	0	0
+I_seek_F08-I_seek_F07-i_sick_F05	i	3	3	1	1.9569074359897058	0	0
+I_deed_F06-i_did_F09-i_did_F07	I	1	1	1	2.275208812992787	0	0
+v_cut_F08-a_cat_F07-a_cat_F04	v	1	1	1	1.0463712860073429	0	0
+I_keep_H05-I_keep_H08-i_kip_H04	i	3	3	1	1.4434371400129749	0	0
+I_teak_F06-I_teak_F05-i_tick_F09	i	3	3	1	1.0884130839986028	0	0
+i_sick_F08-i_sick_F09-I_seek_F06	I	3	3	1	1.7252100860059727	0	0
+A_park_F04-v_puck_F05-A_park_F07	v	2	2	1	1.1422728129982715	0	0
+I_deed_F04-I_deed_F05-i_did_F09	i	3	3	1	0.9856469649967039	0	0
+i_tick_H08-I_teak_H06-i_tick_H09	I	2	2	1	2.1572319340048125	0	0
+I_deed_H07-i_did_H04-I_deed_H08	i	2	2	1	1.8203487130085705	0	0
+v_tut_F06-A_tart_F09-v_tut_F05	A	2	2	1	0.09272617200622335	0	0
+i_kip_H07-I_keep_H04-I_keep_H05	i	1	1	1	0.42203647099086083	0	0
+v_tut_F05-a_tat_F08-v_tut_F06	a	2	3	0	0.039644438002142124	2	0
+v_cud_F06-a_cad_F07-a_cad_F04	v	1	1	1	1.186968207010068	0	0
+a_cat_F08-a_cat_F07-v_cut_F06	v	3	3	1	0.13656810199609026	0	0
+a_cad_H08-v_cud_H05-a_cad_H07	v	2	2	1	1.6982994959980715	0	0
+A_park_F07-v_puck_F09-v_puck_F05	A	1	1	1	1.3379691899899626	0	0
+v_cud_F05-v_cud_F06-a_cad_F07	a	3	3	1	1.5878551759960828	0	0
+i_sick_F04-I_seek_F05-i_sick_F09	I	2	1	0	0.03805787899182178	2	0
+i_did_F04-I_deed_F09-I_deed_F07	i	1	1	1	3.015404675999889	0	0
+v_puck_H04-v_puck_H08-A_park_H06	A	3	3	1	1.2231936000025598	0	0
+i_tick_F08-i_tick_F05-I_teak_F04	I	3	3	1	3.511278163001407	0	0
+v_puck_H05-a_lack_H06-v_puck_H07	a	2	2	1	3.2481188620004104	0	0
+A_tart_H07-v_tut_H05-v_tut_H09	A	1	1	1	2.021613613003865	0	0
+v_tut_F05-A_tart_F08-A_tart_F06	v	1	1	1	2.4978993450058624	0	0
+v_puck_H05-a_lack_H04-a_lack_H08	v	1	1	1	1.3551028539950494	0	0
+
+#TotalErreurs#4TempsTotal#4min 53sec

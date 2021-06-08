@@ -1,0 +1,34 @@
+Fri Apr 16 15:10:29 2021
+Sound File	Stimulus	Vowel	FirstResponse	Response Time	NbErreurs	Repetitions
+v_mutt_F08	mutt	v	v	1.572488784790039	0	0
+I_beak_F09	beak	I	I	2.2234230041503906	0	0
+A_part_H07	part	A	A	1.3193938732147217	0	0
+a_cap_F06	cap	a	a	1.692643165588379	0	0
+a_mat_F04	mat	a	a	1.5771000385284424	0	0
+a_back_H08	back	a	a	1.1262810230255127	0	0
+i_min_F04	min	i	i	1.487450122833252	0	0
+i_lick_F09	lick	i	i	1.3895940780639648	0	0
+i_chip_H08	chip	i	i	1.8884479999542236	0	0
+I_cheap_F06	cheap	I	I	1.2441110610961914	0	0
+v_cup_H04	cup	v	v	1.697613000869751	0	0
+a_pat_F07	pat	a	a	1.6004650592803955	0	0
+A_lark_H08	lark	A	A	1.5750069618225098	0	0
+i_chip_H06	chip	i	i	1.6942670345306396	0	0
+I_beak_H06	beak	I	I	1.4794111251831055	0	0
+a_pat_H07	pat	a	a	3.082564115524292	0	0
+I_cheap_H08	cheap	I	I	3.201653003692627	0	0
+a_cap_F09	cap	a	v	0.5441207885742188	2	0
+a_mat_H05	mat	a	a	1.2450718879699707	0	0
+v_putt_H04	putt	v	v	1.2771000862121582	0	0
+i_bik_H08	bik	i	i	1.2791552543640137	0	0
+A_lark_F07	lark	A	i	0.8426530361175537	2	0
+a_cap_F07	cap	a	a	1.403669834136963	0	0
+i_chip_H07	chip	i	i	1.4030389785766602	0	0
+A_carp_F05	carp	A	A	1.865328073501587	0	0
+I_cheap_F08	cheap	I	I	2.2978618144989014	0	0
+a_mat_F07	mat	a	a	2.2497658729553223	0	0
+i_min_H06	min	i	i	1.7052698135375977	0	0
+v_buck_H08	buck	v	v	2.0709831714630127	0	0
+a_mat_H06	mat	a	a	2.5135083198547363	0	0
+
+#TotalErreurs#4#TempsTotal#1min 49sec

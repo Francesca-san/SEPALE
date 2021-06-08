@@ -1,0 +1,34 @@
+Fri Mar 05 10:24:15 2021
+Sound File	Stimulus	Vowel	FirstResponse	Response Time	NbErreurs	Repetitions
+A_card_F06	card	A	A	1.2004311084747314	0	0
+A_barn_F09	barn	A	A	1.217829942703247	0	0
+i_kip_F05	kip	i	i	0.8746039867401123	0	0
+I_seek_H07	seek	I	I	1.1421077251434326	0	0
+i_did_F04	did	i	i	1.071843147277832	0	0
+I_peak_H08	peak	I	I	1.1036698818206787	0	0
+a_pack_H04	pack	a	a	1.0014829635620117	0	0
+I_peak_F04	peak	I	I	1.3824808597564697	0	0
+v_cut_F09	cut	v	v	0.901724100112915	0	0
+v_cud_F07	cud	v	v	1.2086691856384277	0	0
+A_cart_F07	cart	A	A	1.7589921951293945	0	0
+I_peak_F05	peak	I	I	1.2485060691833496	0	0
+v_tut_H07	tut	v	v	1.0837268829345703	0	0
+v_tut_F07	tut	v	v	0.9951918125152588	0	0
+v_cud_H04	cud	v	v	1.0339851379394531	0	0
+i_pick_F06	pick	i	i	1.2997279167175293	0	0
+A_tart_H08	tart	A	A	0.9877340793609619	0	0
+v_puck_F04	puck	v	v	0.934377908706665	0	0
+I_teak_F04	teak	I	I	1.2550220489501953	0	0
+A_card_H04	card	A	v	0.7809772491455078	1	0
+i_pick_H04	pick	i	i	0.7417681217193604	0	0
+I_keep_H05	keep	I	I	1.3421680927276611	0	0
+a_cad_H07	cad	a	a	1.442075252532959	0	0
+i_tick_F07	tick	i	i	1.020514965057373	0	0
+i_tick_F06	tick	i	i	0.9181430339813232	0	0
+a_pack_H06	pack	a	v	1.0917160511016846	1	0
+I_teak_F07	teak	I	I	1.5500428676605225	0	0
+v_tut_F05	tut	v	a	0.9272818565368652	1	0
+i_sick_H04	sick	i	i	0.9068121910095215	0	1
+i_did_H06	did	i	i	2.8354501724243164	0	0
+
+#TotalErreurs#3#TempsTotal#1min 34sec

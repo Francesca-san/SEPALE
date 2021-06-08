@@ -1,0 +1,34 @@
+#00#Sun Apr 11 11:13:44 2021#ListeOddity_1.txt
+Vowel	Sound Files	Response	FirstResponse	Result	Response Time	NbErreurs	nbRepetitions
+v_putt_H08-A_part_H09-v_putt_H05	A	2	3	0	0.28931498527526855	2	0
+A_part_F07-A_part_F06-v_putt_F05	v	3	3	1	0.7776298522949219	0	0
+v_putt_F09-a_pat_F05-v_putt_F07	a	2	2	1	0.3696930408477783	0	1
+A_part_H09-v_putt_H04-v_putt_H05	A	1	1	1	0.7694902420043945	0	0
+a_cap_F05-a_cap_F07-v_cup_F09	v	3	3	1	0.6749157905578613	0	0
+v_luck_H05-a_lack_H04-a_lack_H08	v	1	1	1	0.47252583503723145	0	0
+I_leak_F09-i_lick_F04-I_leak_F07	i	2	2	1	0.47380590438842773	0	0
+A_carp_F08-v_cup_F06-v_cup_F09	A	1	1	1	0.5795650482177734	0	2
+v_putt_H09-a_pat_H05-v_putt_H07	a	2	1	0	2.5378360748291016	2	1
+A_part_H07-v_putt_H06-A_part_H05	v	2	1	0	1.2729721069335938	2	2
+a_mat_F06-v_mutt_F07-v_mutt_F05	a	1	1	1	0.4102029800415039	0	0
+i_bin_H08-i_bin_H09-I_bean_H07	I	3	3	1	0.45416903495788574	0	0
+I_bean_F06-i_bin_F09-i_bin_F07	I	1	1	1	0.3700239658355713	0	1
+i_bin_H09-I_bean_H06-i_bin_H08	I	2	2	1	0.48847174644470215	0	0
+v_cup_F07-a_cap_F08-v_cup_F04	a	2	1	0	1.009610891342163	2	1
+a_pat_F06-v_putt_F04-a_pat_F08	v	2	2	1	0.3851320743560791	0	1
+A_part_H07-A_part_H06-v_putt_H05	v	3	3	1	0.9547319412231445	0	1
+I_beak_H06-I_beak_H05-i_bik_H09	i	3	3	1	1.3915719985961914	0	0
+i_min_H06-i_min_H05-I_mean_H07	I	3	3	1	0.7678370475769043	0	0
+v_mutt_H05-a_mat_H08-v_mutt_H06	a	2	2	1	1.163193941116333	0	1
+v_mutt_F09-v_mutt_F05-a_mat_F06	a	3	3	1	0.3068406581878662	0	0
+I_beak_F06-I_beak_F05-i_bik_F09	i	3	3	1	0.19767403602600098	0	1
+I_beak_F06-i_bik_F08-I_beak_F05	i	2	2	1	0.770050048828125	0	0
+A_lark_F07-v_luck_F09-v_luck_F05	A	1	3	0	1.0152349472045898	2	1
+v_cup_F06-a_cap_F07-a_cap_F04	v	1	1	1	0.5624001026153564	0	0
+v_mutt_H08-a_mat_H09-a_mat_H04	v	1	1	1	0.47012996673583984	0	0
+v_luck_F04-v_luck_F08-A_lark_F06	A	3	2	0	0.22326397895812988	3	0
+a_cap_F08-v_cup_F05-a_cap_F07	v	2	2	1	4.505377769470215	0	1
+i_lick_H09-I_leak_H08-I_leak_H07	i	1	3	0	0.6024179458618164	2	2
+a_mat_F04-v_mutt_F06-a_mat_F09	v	2	2	1	0.6250038146972656	0	0
+
+#TotalErreurs#15TempsTotal#4min 28sec

@@ -1,0 +1,34 @@
+Mon Mar 08 21:52:38 2021
+Sound File	Stimulus	Vowel	FirstResponse	Response Time	NbErreurs	Repetitions
+I_peak_F06	peak	I	I	52.50523090362549	0	0
+I_peak_F09	peak	I	I	1.5127081871032715	0	0
+i_kip_H05	kip	i	i	2.5000178813934326	0	0
+v_tut_H08	tut	v	v	1.5373461246490479	0	0
+v_bun_H08	bun	v	v	3.3179569244384766	0	0
+i_tick_H04	tick	i	i	2.1798319816589355	0	0
+I_seek_F08	seek	I	I	1.8807668685913086	0	0
+v_puck_F04	puck	v	v	4.31274676322937	0	0
+A_cart_H06	cart	A	A	2.5554020404815674	0	0
+i_did_H07	did	i	I	1.2930822372436523	1	0
+v_puck_H05	puck	v	v	1.3905210494995117	0	0
+i_tick_F05	tick	i	i	8.771246671676636	0	0
+I_deed_F05	deed	I	I	1.6637811660766602	0	0
+v_bun_F07	bun	v	v	1.9270541667938232	0	0
+v_bun_F08	bun	v	v	2.179965019226074	0	0
+a_ban_F09	ban	a	a	3.1932899951934814	0	0
+a_cad_F08	cad	a	a	2.63006591796875	0	0
+v_puck_H06	puck	v	v	1.5529758930206299	0	0
+A_barn_F07	barn	A	A	1.7777509689331055	0	0
+v_cud_H07	cud	v	v	1.3027379512786865	0	0
+a_tat_H07	tat	a	a	1.482814073562622	0	0
+I_deed_F09	deed	I	I	2.5589349269866943	0	0
+v_cud_F07	cud	v	v	1.6877410411834717	0	0
+a_ban_F07	ban	a	a	2.6312179565429688	0	0
+v_cud_H04	cud	v	v	1.5927081108093262	0	0
+i_tick_H06	tick	i	i	2.4052138328552246	0	0
+a_cat_H07	cat	a	a	2.5802741050720215	0	0
+v_cud_F06	cud	v	v	1.5799579620361328	0	0
+I_seek_F04	seek	I	I	2.275747060775757	0	0
+a_tat_H09	tat	a	a	7.195597171783447	0	0
+
+#TotalErreurs#1#TempsTotal#2min 59sec

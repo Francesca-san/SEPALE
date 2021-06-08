@@ -1,0 +1,12 @@
+#Mon Feb 15 23:01:35 2021#Liste2AFC_a.txt#00
+Sound File	Stimulus	Vowel	Response Time	NbErreurs	Repetitions
+v_mutt_H09	mutt	v	1.7034790515899658	0	5
+v_bun_F06	bun	v	2.0928728580474854	0	0
+a_pat_F06	pat	a	5.462813138961792	0	0
+v_luck_H05	luck	v	2.2426438331604004	0	4
+v_tut_H04	tut	v	1.4749829769134521	0	4
+a_pack_H05	pack	a	1.7097227573394775	0	2
+a_cat_F06	cat	a	0.24828290939331055	1	0
+a_cap_F05	cap	a	0.6009700298309326	1	0
+a_lack_F08	lack	a	1.5857291221618652	0	0
+a_cap_H04	cap	a	0.11385679244995117	0	0

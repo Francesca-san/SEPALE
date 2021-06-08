@@ -1,0 +1,20 @@
+Tue May 11 18:51:21 2021
+Sound File	Stimulus	Vowel	FirstResponse	Response Time	NbErreurs	Repetitions
+i_pick_H04	pick	i	i	2.864820943796076	0	0
+i_kip_H06	kip	i	I	0.11707906844094396	1	0
+A_barn_H08	barn	A	A	1.1172549546463415	0	1
+i_tick_H04	tick	i	i	0.7050869239028543	0	1
+i_kip_F08	kip	i	i	1.7069630367914215	0	1
+v_cud_F09	cud	v	v	1.3853980511194095	0	1
+A_cart_H06	cart	A	a	0.10807911527808756	1	1
+v_bun_H09	bun	v	v	0.739929027738981	0	1
+a_cat_H09	cat	a	a	1.3061149813001975	0	0
+A_barn_H09	barn	A	v	0.7759550675982609	1	1
+A_cart_H08	cart	A	v	0.12481595319695771	2	1
+a_ban_H06	ban	a	A	0.14980492170434445	1	1
+a_tat_H04	tat	a	a	0.7841489117126912	0	1
+i_did_F05	did	i	i	0.9082799514289945	0	1
+I_keep_F05	keep	I	i	0.11184795561712235	1	1
+i_kip_F06	kip	i	I	0.28208989184349775	1	0
+I_teak_H09	teak	I	i	0.10745292552746832	1	0
+I_teak_F05	teak	I	i	0.10759611753746867	1	0

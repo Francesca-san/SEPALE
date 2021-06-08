@@ -1,0 +1,34 @@
+#00#Sun May 09 23:32:10 2021#ListeOddity_1.txt
+Vowel	Sound Files	Response	FirstResponse	Result	Response Time	NbErreurs	nbRepetitions
+v_luck_H05-a_lack_H04-a_lack_H08	v	1	3	0	1.1235959667246789	2	1
+I_cheap_H05-I_cheap_H07-i_chip_H09	i	3	2	0	0.524910056963563	2	2
+v_putt_F05-v_putt_F07-a_pat_F08	a	3	2	0	0.49333410535473377	2	1
+v_putt_H08-A_part_H09-v_putt_H05	A	2	3	0	1.292273108032532	2	1
+A_part_F07-A_part_F06-v_putt_F05	v	3	3	1	0.9116409515263513	0	0
+i_lick_H04-I_leak_H05-i_lick_H09	I	2	2	1	0.6159950594883412	0	1
+i_lick_H08-i_lick_H09-I_leak_H06	I	3	3	1	1.2673419447382912	0	3
+I_mean_H05-I_mean_H08-i_min_H04	i	3	1	0	0.6274970967788249	2	1
+i_min_H06-i_min_H05-I_mean_H07	I	3	3	1	1.7931150427320972	0	1
+v_mutt_H05-v_mutt_H07-A_mart_H08	A	3	3	1	0.6174859817838296	0	0
+I_bean_H06-i_bin_H09-i_bin_H07	I	1	1	1	2.1297440477646887	0	0
+i_chip_F07-I_cheap_F09-I_cheap_F04	i	1	1	1	2.640102950274013	0	0
+I_bean_F04-I_bean_F05-i_bin_F09	i	3	3	1	0.3407029923982918	0	1
+a_back_H05-v_buck_H08-v_buck_H07	a	1	1	1	0.9466359646758065	0	1
+a_pat_F06-v_putt_F04-a_pat_F08	v	2	2	1	0.41219292243476957	0	1
+a_back_H04-v_buck_H08-a_back_H07	v	2	2	1	0.39363405003678054	0	0
+i_bin_F04-I_bean_F09-I_bean_F07	i	1	1	1	0.8038820769870654	0	0
+I_mean_F06-i_min_F07-I_mean_F05	i	2	2	1	1.2320220656692982	0	0
+v_buck_H08-a_back_H07-a_back_H04	v	1	1	1	1.8088080279994756	0	0
+I_bean_H04-I_bean_H05-i_bin_H09	i	3	3	1	1.777286980766803	0	2
+A_mart_F06-A_mart_F09-v_mutt_F07	v	3	3	1	0.7871270339237526	0	1
+v_mutt_F05-A_mart_F08-A_mart_F06	v	1	1	1	0.49088089156430215	0	2
+v_cup_H06-a_cap_H07-a_cap_H04	v	1	1	1	0.27951790881343186	0	1
+A_part_F07-v_putt_F06-A_part_F05	v	2	2	1	0.5347009162651375	0	0
+I_mean_F05-I_mean_F08-i_min_F04	i	3	3	1	0.0944269938627258	0	1
+v_luck_F08-A_lark_F06-A_lark_F04	v	1	1	1	0.2981439569266513	0	1
+a_back_F04-v_buck_F08-a_back_F07	v	2	2	1	0.40194607782177627	0	2
+i_lick_F04-I_leak_F05-i_lick_F09	I	2	1	0	1.2936549069127068	2	2
+v_mutt_F05-a_mat_F08-v_mutt_F06	a	2	2	1	1.7409318960271776	0	2
+i_min_F06-i_min_F05-I_mean_F07	I	3	3	1	0.9723420299123973	0	0
+
+#TotalErreurs#12TempsTotal#5min 39sec

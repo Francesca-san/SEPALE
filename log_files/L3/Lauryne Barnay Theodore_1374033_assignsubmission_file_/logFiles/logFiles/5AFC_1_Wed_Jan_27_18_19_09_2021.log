@@ -1,0 +1,34 @@
+Wed Jan 27 18:19:09 2021
+Sound File	Stimulus	Vowel	FirstResponse	Response Time	NbErreurs	Repetitions
+i_lick_H07	lick	i	i	1.9290642738342285	0	2
+A_part_H06	part	A	A	2.396839141845703	0	1
+a_back_F06	back	a	a	1.1189680099487305	0	7
+v_mutt_F08	mutt	v	v	1.2796521186828613	0	1
+A_bark_F04	bark	A	A	1.207747220993042	0	3
+A_bark_F05	bark	A	A	1.3027939796447754	0	8
+i_bin_H09	bin	i	i	2.8661720752716064	0	2
+v_buck_H04	buck	v	v	1.0806641578674316	0	1
+v_luck_F09	luck	v	v	3.416613817214966	0	0
+A_mart_F07	mart	A	v	2.8090579509735107	1	5
+a_mat_F07	mat	a	a	1.4848389625549316	0	0
+v_putt_F09	putt	v	v	2.328857898712158	0	0
+i_bik_H07	bik	i	i	1.027174949645996	0	1
+I_leak_F09	leak	I	I	1.4484000205993652	0	0
+I_bean_F08	bean	I	I	1.4410061836242676	0	1
+v_putt_H06	putt	v	v	1.4178879261016846	0	4
+A_part_H08	part	A	A	1.852405071258545	0	0
+v_mutt_F07	mutt	v	v	3.333678722381592	0	0
+I_cheap_F04	cheap	I	I	1.7305078506469727	0	1
+a_mat_H07	mat	a	A	3.2703521251678467	1	0
+i_bin_H06	bin	i	i	1.5255930423736572	0	0
+i_min_H09	min	i	I	0.23265981674194336	1	1
+v_cup_H09	cup	v	v	1.2978792190551758	0	0
+a_cap_H07	cap	a	A	0.4635636806488037	1	2
+I_beak_H06	beak	I	I	1.0739760398864746	0	3
+A_part_F07	part	A	v	0.4797389507293701	2	2
+A_mart_F04	mart	A	A	2.1512670516967773	0	0
+v_buck_H06	buck	v	v	3.1112680435180664	0	0
+i_lick_H08	lick	i	i	2.24187970161438	0	0
+v_luck_F07	luck	v	v	1.9476161003112793	0	0
+
+#TotalErreurs#6#TempsTotal#1h 1min 4sec

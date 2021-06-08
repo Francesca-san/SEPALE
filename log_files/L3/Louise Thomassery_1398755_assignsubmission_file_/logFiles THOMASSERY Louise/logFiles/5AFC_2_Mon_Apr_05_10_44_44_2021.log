@@ -1,0 +1,34 @@
+Mon Apr 05 10:44:44 2021
+Sound File	Stimulus	Vowel	FirstResponse	Response Time	NbErreurs	Repetitions
+v_bun_F04	bun	v	v	2.3614630699157715	0	0
+A_barn_H05	barn	A	A	2.163041114807129	0	0
+i_did_H09	did	i	i	1.4769999980926514	0	0
+A_tart_F08	tart	A	A	1.6740050315856934	0	0
+a_cat_F05	cat	a	a	1.4966559410095215	0	0
+a_cad_F09	cad	a	A	0.8233599662780762	1	0
+A_barn_F08	barn	A	v	0.8080720901489258	1	0
+v_cud_F09	cud	v	v	1.5013041496276855	0	0
+A_tart_H06	tart	A	A	1.6312038898468018	0	0
+v_bun_H06	bun	v	a	1.1168420314788818	1	0
+v_cut_F06	cut	v	v	1.477168083190918	0	0
+a_pack_F05	pack	a	a	1.814932107925415	0	0
+a_ban_F04	ban	a	a	2.3389501571655273	0	0
+v_puck_F04	puck	v	a	0.7500331401824951	1	0
+i_kip_H04	kip	i	i	1.8676061630249023	0	0
+A_park_H09	park	A	A	1.5669221878051758	0	0
+a_cat_H09	cat	a	a	1.5643861293792725	0	0
+A_barn_H06	barn	A	A	1.684420108795166	0	0
+a_tat_F08	tat	a	a	1.567159652709961	0	0
+A_cart_H06	cart	A	A	1.750295877456665	0	0
+a_pack_H08	pack	a	a	1.7166481018066406	0	0
+A_cart_H05	cart	A	v	1.105126142501831	1	0
+I_deed_F05	deed	I	I	1.5983688831329346	0	0
+v_puck_H06	puck	v	a	1.2109150886535645	1	0
+i_sick_F06	sick	i	i	1.8336291313171387	0	0
+i_pick_F05	pick	i	i	1.480964183807373	0	0
+I_keep_H07	keep	I	I	1.9147610664367676	0	0
+v_cut_F05	cut	v	v	1.6823561191558838	0	0
+v_tut_F06	tut	v	v	1.646439790725708	0	0
+i_did_H07	did	i	i	1.6834471225738525	0	0
+
+#TotalErreurs#6#TempsTotal#1min 54sec

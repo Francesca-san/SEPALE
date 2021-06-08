@@ -1,0 +1,34 @@
+Tue Apr 20 17:40:29 2021
+Sound File	Stimulus	Vowel	FirstResponse	Response Time	NbErreurs	Repetitions
+i_bin_F07	bin	i	i	0.8723158836364746	0	2
+v_mutt_F05	mutt	v	v	1.3817522525787354	0	1
+a_cap_H09	cap	a	a	1.1046569347381592	0	0
+A_carp_H04	carp	A	A	1.0752568244934082	0	1
+v_luck_F05	luck	v	v	2.034419059753418	0	0
+i_chip_F07	chip	i	i	1.2336900234222412	0	0
+a_pat_F04	pat	a	a	0.9966981410980225	0	0
+A_lark_F08	lark	A	A	1.6897990703582764	0	0
+a_back_H07	back	a	a	1.179326057434082	0	1
+a_mat_H05	mat	a	a	1.2091140747070312	0	0
+i_lick_F06	lick	i	i	1.496980905532837	0	0
+i_lick_F09	lick	i	i	0.5437791347503662	0	2
+I_bean_F05	bean	I	I	1.4824020862579346	0	0
+a_cap_H08	cap	a	A	0.13061785697937012	2	2
+a_back_H09	back	a	a	0.455549955368042	0	1
+a_back_F09	back	a	a	0.5483567714691162	0	1
+a_lack_F05	lack	a	a	1.067445993423462	0	0
+v_cup_H06	cup	v	v	0.8678131103515625	0	0
+I_cheap_H08	cheap	I	I	1.0669901371002197	0	1
+A_mart_H04	mart	A	a	0.1248331069946289	2	3
+I_cheap_H06	cheap	I	I	0.7355120182037354	0	1
+a_cap_F07	cap	a	a	1.141697645187378	0	0
+a_mat_H06	mat	a	A	0.12017107009887695	1	0
+i_bin_F08	bin	i	i	0.5895140171051025	0	1
+A_part_F04	part	A	A	1.092414140701294	0	1
+i_bik_H07	bik	i	i	0.40326499938964844	0	2
+i_chip_F09	chip	i	i	2.0340988636016846	0	0
+i_lick_F07	lick	i	i	0.9440608024597168	0	2
+i_lick_H08	lick	i	i	1.0347838401794434	0	1
+A_carp_F09	carp	A	A	0.7745039463043213	0	1
+
+#TotalErreurs#5#TempsTotal#2min 17sec

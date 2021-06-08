@@ -1,0 +1,34 @@
+Sun Apr 04 23:26:55 2021
+Sound File	Stimulus	Vowel	FirstResponse	Response Time	NbErreurs	Repetitions
+a_mat_H08	mat	a	a	2.688671827316284	0	0
+a_pat_F04	pat	a	a	2.8234617710113525	0	0
+v_luck_H07	luck	v	v	3.0803699493408203	0	0
+i_chip_H08	chip	i	i	2.6049280166625977	0	0
+a_lack_H06	lack	a	a	2.4835097789764404	0	0
+a_lack_H05	lack	a	a	1.6255731582641602	0	0
+v_cup_F07	cup	v	v	1.730151891708374	0	0
+A_mart_F06	mart	A	A	1.5550189018249512	0	0
+A_part_F09	part	A	A	1.8240702152252197	0	0
+a_cap_F04	cap	a	a	2.6869869232177734	0	0
+A_mart_F09	mart	A	A	1.895146131515503	0	0
+i_bik_H06	bik	i	i	2.345633029937744	0	0
+I_bean_H06	bean	I	I	1.502532958984375	0	0
+v_putt_F08	putt	v	v	1.587332010269165	0	0
+v_mutt_H04	mutt	v	v	1.9233689308166504	0	0
+v_buck_H07	buck	v	v	2.066990852355957	0	0
+v_luck_H04	luck	v	v	1.670069932937622	0	0
+a_pat_H04	pat	a	a	1.5875442028045654	0	0
+v_buck_F07	buck	v	v	1.397022008895874	0	0
+I_leak_F07	leak	I	I	2.5629379749298096	0	0
+I_leak_F09	leak	I	I	1.1937990188598633	0	0
+i_bik_H05	bik	i	i	1.4703319072723389	0	0
+v_buck_F09	buck	v	v	1.356518030166626	0	0
+a_mat_H09	mat	a	a	1.6153271198272705	0	0
+A_lark_H05	lark	A	A	1.6964411735534668	0	0
+v_mutt_F09	mutt	v	v	1.7727611064910889	0	0
+v_putt_F07	putt	v	v	1.5733981132507324	0	0
+i_bin_F06	bin	i	i	1.5649428367614746	0	0
+a_lack_H04	lack	a	a	1.4588940143585205	0	0
+a_pat_F06	pat	a	a	1.7685222625732422	0	0
+
+#TotalErreurs#0#TempsTotal#1min 46sec

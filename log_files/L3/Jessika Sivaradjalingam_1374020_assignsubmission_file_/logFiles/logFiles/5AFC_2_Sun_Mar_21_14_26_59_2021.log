@@ -1,0 +1,34 @@
+Sun Mar 21 14:26:59 2021
+Sound File	Stimulus	Vowel	FirstResponse	Response Time	NbErreurs	Repetitions
+i_sick_H07	sick	i	i	2.2800171839999166	0	0
+a_ban_H07	ban	a	a	3.18413677500007	0	0
+v_cud_H09	cud	v	v	1.387948348000009	0	0
+a_cat_F06	cat	a	a	1.583402646000195	0	0
+v_cut_F07	cut	v	v	1.2744072819998564	0	0
+i_kip_H07	kip	i	i	1.6511533949999375	0	0
+v_cut_F04	cut	v	v	1.4892072589998406	0	0
+i_tick_F06	tick	i	i	2.8568338709999352	0	0
+v_tut_F07	tut	v	v	1.793347679999897	0	0
+a_cad_F05	cad	a	a	1.528319996999926	0	0
+v_bun_F07	bun	v	v	1.8232265799999823	0	0
+I_deed_F04	deed	I	I	2.413071544000104	0	0
+a_cad_H09	cad	a	a	3.023562729999867	0	0
+a_tat_F07	tat	a	a	4.6340852529999665	0	0
+i_sick_H06	sick	i	i	2.001348393000171	0	0
+I_teak_H06	teak	I	I	1.784713039999815	0	0
+i_tick_F09	tick	i	i	1.3484695979998378	0	0
+v_tut_H08	tut	v	v	1.6988486610000564	0	0
+I_seek_H08	seek	I	I	2.0374660050001694	0	0
+v_puck_F07	puck	v	v	1.3564675099999022	0	0
+v_cut_F05	cut	v	v	2.1733706610000354	0	0
+A_barn_F05	barn	A	A	3.618459613000141	0	0
+i_sick_F06	sick	i	i	2.38578342400001	0	0
+v_puck_F08	puck	v	v	4.9554796729999	0	0
+i_pick_F08	pick	i	i	3.8299246730000505	0	0
+I_teak_H07	teak	I	I	1.8405119999999897	0	0
+I_teak_H08	teak	I	I	1.5699006920001466	0	0
+i_pick_H06	pick	i	i	2.041605656999991	0	0
+A_cart_H09	cart	A	v	1.64308760300014	1	0
+I_teak_F05	teak	I	I	2.684042397999974	0	0
+
+#TotalErreurs#1#TempsTotal#2min 2sec

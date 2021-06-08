@@ -1,0 +1,34 @@
+#00#Thu Feb 11 18:52:50 2021#ListeOddity_1.txt
+Vowel	Sound Files	Response	FirstResponse	Result	Response Time	NbErreurs	nbRepetitions
+I_cheap_F04-i_chip_F09-I_cheap_F06	i	2	3	0	0.20605897903442383	2	1
+a_lack_H05-v_luck_H09-a_lack_H06	v	2	2	1	0.5511889457702637	0	2
+a_pat_H09-v_putt_H06-v_putt_H07	a	1	1	1	0.5410122871398926	0	2
+A_part_H09-v_putt_H04-v_putt_H05	A	1	1	1	1.1092309951782227	0	0
+v_buck_F05-A_bark_F09-v_buck_F04	A	2	3	0	0.17987298965454102	3	1
+i_min_F07-I_mean_F04-I_mean_F05	i	1	1	1	0.930814266204834	0	2
+I_mean_H05-i_min_H04-i_min_H08	I	1	3	0	0.7165102958679199	3	0
+I_bean_H04-I_bean_H05-i_bin_H09	i	3	1	0	1.2317888736724854	2	2
+A_mart_F06-A_mart_F09-v_mutt_F07	v	3	3	1	0.07788801193237305	0	1
+i_bik_H09-I_beak_H07-I_beak_H06	i	1	1	1	0.9012420177459717	0	3
+i_bik_F08-i_bik_F05-I_beak_F04	I	3	3	1	0.9050707817077637	0	1
+a_pat_F09-v_putt_F06-v_putt_F07	a	1	1	1	0.4100499153137207	0	0
+I_cheap_F05-I_cheap_F07-i_chip_F09	i	3	3	1	1.000718116760254	0	1
+I_cheap_H04-i_chip_H07-i_chip_H05	I	1	1	1	1.197195053100586	0	2
+A_part_H07-A_part_H06-v_putt_H05	v	3	3	1	0.5264718532562256	0	0
+I_cheap_H05-I_cheap_H07-i_chip_H09	i	3	2	0	1.1106059551239014	2	1
+a_pat_H06-v_putt_H04-a_pat_H08	v	2	3	0	0.32002902030944824	3	0
+a_mat_H04-a_mat_H05-v_mutt_H08	v	3	3	1	0.4693641662597656	0	0
+v_luck_F05-a_lack_F04-a_lack_F08	v	1	1	1	0.21005487442016602	0	1
+I_beak_H06-I_beak_H05-i_bik_H09	i	3	3	1	0.4065539836883545	0	1
+v_luck_H05-a_lack_H04-a_lack_H08	v	1	1	1	0.08479905128479004	0	1
+A_mart_F07-v_mutt_F05-v_mutt_F09	A	1	2	0	0.24531912803649902	2	3
+i_bin_F09-I_bean_F06-i_bin_F08	I	2	2	1	0.46230387687683105	0	1
+v_luck_H04-v_luck_H08-A_lark_H06	A	3	2	0	0.6284313201904297	3	1
+A_carp_H05-v_cup_H06-A_carp_H07	v	2	3	0	0.18742609024047852	2	1
+v_buck_H06-v_buck_H09-a_back_H08	a	3	3	1	1.8338806629180908	0	1
+A_carp_H08-v_cup_H06-v_cup_H09	A	1	3	0	0.8510608673095703	2	1
+i_lick_H09-I_leak_H08-I_leak_H07	i	1	3	0	1.3870210647583008	2	1
+a_mat_F06-v_mutt_F07-v_mutt_F05	a	1	1	1	0.6751198768615723	0	1
+i_bik_F09-I_beak_F07-I_beak_F06	i	1	1	1	0.1750490665435791	0	2
+
+#TotalErreurs#26TempsTotal#6min 8sec

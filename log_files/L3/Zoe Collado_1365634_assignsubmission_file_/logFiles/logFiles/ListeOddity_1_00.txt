@@ -1,0 +1,374 @@
+#00#Sun Feb 14 22:29:47 2021#ListeOddity_1.txt
+Vowel	Sound Files	Response	FirstResponse	Result	Response Time	NbErreurs	nbRepetitions
+A_part_F07-v_putt_F06-A_part_F05	v	2	3	0	0.22871184349060059	2	1
+a_lack_H06-a_lack_H05-v_luck_H09	v	3	3	1	1.8465540409088135	0	1
+v_luck_F05-a_lack_F04-a_lack_F08	v	1	1	1	7.407305002212524	0	0
+i_bik_H08-I_beak_H06-i_bik_H09	I	2	1	0	1.468311071395874	2	0
+i_bin_H08-i_bin_H09-I_bean_H07	I	3	3	1	0.3906371593475342	0	0
+i_bik_H09-I_beak_H07-I_beak_H06	i	1	1	1	0.2272958755493164	0	1
+a_cap_H07-v_cup_H09-v_cup_H05	a	1	1	1	5.49971604347229	0	0
+v_mutt_H08-a_mat_H09-a_mat_H04	v	1	1	1	0.6875028610229492	0	0
+v_buck_H06-v_buck_H09-a_back_H08	a	3	3	1	0.36178112030029297	0	1
+i_chip_F07-I_cheap_F09-I_cheap_F04	i	1	1	1	1.4432809352874756	0	0
+I_leak_F08-I_leak_F07-i_lick_F05	i	3	3	1	1.2894878387451172	0	0
+I_bean_F07-i_bin_F04-I_bean_F08	i	2	2	1	1.738908052444458	0	0
+a_pat_H08-a_pat_H06-v_putt_H04	v	3	3	1	1.7547540664672852	0	0
+A_bark_H09-A_bark_H04-v_buck_H09	v	3	3	1	1.5048902034759521	0	0
+v_mutt_H05-A_mart_H08-A_mart_H06	v	1	1	1	1.774101972579956	0	0
+A_lark_H04-v_luck_H05-A_lark_H07	v	2	2	1	1.24082612991333	0	0
+v_cup_H05-v_cup_H06-a_cap_H07	a	3	3	1	1.5661680698394775	0	0
+I_bean_F06-i_bin_F09-i_bin_F07	I	1	1	1	1.0156280994415283	0	0
+v_luck_F04-v_luck_F09-a_lack_F06	a	3	3	1	1.283644199371338	0	0
+a_lack_F05-v_luck_F09-a_lack_F06	v	2	3	0	0.08867502212524414	2	0
+a_lack_F06-v_luck_F04-v_luck_F09	a	1	1	1	1.7647151947021484	0	0
+I_leak_F09-i_lick_F08-i_lick_F06	I	1	1	1	1.250702142715454	0	0
+v_mutt_F08-a_mat_F09-a_mat_F04	v	1	1	1	2.1410133838653564	0	0
+v_luck_H09-A_lark_H05-v_luck_H07	A	2	2	1	2.616909980773926	0	0
+I_cheap_H05-I_cheap_H07-i_chip_H09	i	3	3	1	1.807446002960205	0	0
+A_mart_F06-A_mart_F09-v_mutt_F07	v	3	3	1	7.047269105911255	0	0
+v_buck_F05-A_bark_F04-A_bark_F07	v	1	1	1	1.4837822914123535	0	0
+a_pat_F06-v_putt_F04-a_pat_F08	v	2	2	1	1.44974684715271	0	0
+A_part_F09-v_putt_F04-v_putt_F05	A	1	1	1	3.4119181632995605	0	0
+i_min_H07-I_mean_H04-i_min_H06	I	2	2	1	1.5385630130767822	0	0
+
+#TotalErreurs#6TempsTotal#3min 58sec
+#00#Sun Feb 21 21:29:56 2021#ListeOddity_1.txt
+Vowel	Sound Files	Response	FirstResponse	Result	Response Time	NbErreurs	nbRepetitions
+I_leak_F09-i_lick_F04-I_leak_F07	i	2	2	1	0.08639216423034668	0	1
+v_mutt_H06-A_mart_H09-v_mutt_H05	A	2	3	0	1.5682458877563477	2	0
+v_luck_F05-a_lack_F06-v_luck_F07	a	2	3	0	0.3931889533996582	2	0
+i_bin_H09-I_bean_H06-i_bin_H08	I	2	2	1	0.08648872375488281	0	1
+v_luck_F05-a_lack_F04-a_lack_F08	v	1	1	1	0.6129598617553711	0	0
+A_mart_H08-v_mutt_H04-A_mart_H05	v	2	1	0	0.08548688888549805	2	0
+v_buck_F06-v_buck_F09-a_back_F08	a	3	3	1	0.27348875999450684	0	0
+A_bark_F09-A_bark_F04-v_buck_F09	v	3	2	0	0.16205382347106934	2	0
+I_cheap_H04-i_chip_H09-I_cheap_H06	i	2	2	1	0.2161729335784912	0	1
+A_mart_F08-v_mutt_F04-A_mart_F05	v	2	2	1	2.532923936843872	0	0
+i_min_F06-i_min_F05-I_mean_F07	I	3	3	1	0.1115868091583252	0	0
+A_lark_H04-v_luck_H05-A_lark_H07	v	2	2	1	0.08786273002624512	0	0
+i_bik_H08-i_bik_H05-I_beak_H04	I	3	3	1	0.08886098861694336	0	0
+i_bin_F08-i_bin_F09-I_bean_F07	I	3	3	1	0.08887004852294922	0	0
+v_mutt_F05-v_mutt_F07-A_mart_F08	A	3	3	1	0.08711385726928711	0	0
+I_mean_F05-i_min_F04-i_min_F08	I	1	1	1	0.385040283203125	0	0
+I_mean_H05-i_min_H04-i_min_H08	I	1	1	1	0.42743706703186035	0	0
+A_bark_H09-v_buck_H05-v_buck_H07	A	1	1	1	0.10183882713317871	0	1
+I_leak_H09-i_lick_H08-i_lick_H06	I	1	1	1	0.43106508255004883	0	0
+a_mat_H06-v_mutt_H07-v_mutt_H05	a	1	2	0	0.8169651031494141	3	1
+A_part_F09-v_putt_F04-v_putt_F05	A	1	1	1	0.48169684410095215	0	0
+a_back_F04-v_buck_F08-a_back_F07	v	2	2	1	0.3448209762573242	0	0
+v_cup_H06-a_cap_H07-a_cap_H04	v	1	1	1	0.4921610355377197	0	0
+i_lick_F04-I_leak_F05-i_lick_F09	I	2	1	0	0.23183584213256836	2	0
+v_luck_H05-a_lack_H04-a_lack_H08	v	1	1	1	1.0631511211395264	0	1
+v_buck_H06-a_back_H07-v_buck_H08	a	2	2	1	0.28005027770996094	0	1
+i_bin_F04-I_bean_F09-I_bean_F07	i	1	1	1	0.22212004661560059	0	1
+a_mat_H04-a_mat_H05-v_mutt_H08	v	3	3	1	0.09136199951171875	0	0
+I_beak_H06-I_beak_H05-i_bik_H09	i	3	3	1	1.021064043045044	0	0
+a_lack_F05-v_luck_F09-a_lack_F06	v	2	2	1	0.1347179412841797	0	0
+
+#TotalErreurs#13TempsTotal#3min 42sec
+#00#Wed Feb 24 15:42:42 2021#ListeOddity_1.txt
+Vowel	Sound Files	Response	FirstResponse	Result	Response Time	NbErreurs	nbRepetitions
+i_min_F07-I_mean_F04-I_mean_F05	i	1	1	1	0.2968912124633789	0	0
+i_lick_H09-I_leak_H08-I_leak_H07	i	1	1	1	0.13155198097229004	0	0
+i_bik_F08-I_beak_F06-i_bik_F09	I	2	2	1	0.3281209468841553	0	0
+a_mat_F04-a_mat_F05-v_mutt_F08	v	3	3	1	2.035810708999634	0	0
+v_mutt_H06-A_mart_H09-v_mutt_H05	A	2	2	1	0.19704771041870117	0	1
+i_chip_H07-I_cheap_H09-I_cheap_H04	i	1	3	0	0.13004398345947266	3	1
+A_part_H07-v_putt_H06-A_part_H05	v	2	1	0	0.07813882827758789	2	1
+a_cap_F08-v_cup_F05-a_cap_F07	v	2	2	1	0.1718888282775879	0	0
+a_back_H04-v_buck_H08-a_back_H07	v	2	2	1	1.4144620895385742	0	1
+I_mean_F05-I_mean_F08-i_min_F04	i	3	3	1	0.2093961238861084	0	1
+v_cup_H07-v_cup_H08-A_carp_H09	A	3	3	1	2.7807528972625732	0	1
+i_lick_H04-I_leak_H05-i_lick_H09	I	2	3	0	0.07813596725463867	2	0
+v_putt_F08-A_part_F09-v_putt_F05	A	2	2	1	0.346790075302124	0	0
+I_cheap_H04-i_chip_H07-i_chip_H05	I	1	1	1	0.7025279998779297	0	0
+v_luck_H05-a_lack_H06-v_luck_H07	a	2	2	1	0.23542189598083496	0	0
+i_lick_F04-I_leak_F05-i_lick_F09	I	2	2	1	0.4666788578033447	0	1
+v_luck_F09-A_lark_F05-v_luck_F07	A	2	2	1	1.045320987701416	0	0
+v_buck_F05-A_bark_F04-A_bark_F07	v	1	1	1	0.5313982963562012	0	0
+A_lark_H07-v_luck_H09-v_luck_H05	A	1	1	1	0.4534578323364258	0	0
+i_bin_H04-I_bean_H09-I_bean_H07	i	1	1	1	0.08618283271789551	0	0
+v_putt_H04-a_pat_H05-a_pat_H06	v	1	1	1	0.35579800605773926	0	1
+I_mean_F06-i_min_F07-I_mean_F05	i	2	2	1	1.5243399143218994	0	0
+A_carp_H08-v_cup_H06-v_cup_H09	A	1	1	1	0.5021519660949707	0	0
+i_bin_F08-i_bin_F09-I_bean_F07	I	3	3	1	0.8427231311798096	0	0
+A_mart_H08-v_mutt_H04-A_mart_H05	v	2	2	1	0.17425918579101563	0	1
+v_luck_F04-v_luck_F09-a_lack_F06	a	3	2	0	0.10929608345031738	3	1
+v_cup_H06-a_cap_H07-a_cap_H04	v	1	1	1	0.2364199161529541	0	1
+v_mutt_F05-A_mart_F08-A_mart_F06	v	1	1	1	0.4687647819519043	0	1
+i_chip_H05-i_chip_H08-I_cheap_H04	I	3	3	1	0.7252969741821289	0	0
+i_bik_H09-I_beak_H07-I_beak_H06	i	1	1	1	0.8381621837615967	0	0
+
+#TotalErreurs#10TempsTotal#3min 52sec
+#00#Fri Feb 26 15:28:45 2021#ListeOddity_1.txt
+Vowel	Sound Files	Response	FirstResponse	Result	Response Time	NbErreurs	nbRepetitions
+v_buck_F06-v_buck_F09-a_back_F08	a	3	3	1	0.1406400203704834	0	1
+A_carp_H08-v_cup_H06-v_cup_H09	A	1	1	1	0.34375977516174316	0	1
+I_cheap_F05-I_cheap_F07-i_chip_F09	i	3	3	1	0.46366095542907715	0	1
+v_mutt_H05-v_mutt_H07-A_mart_H08	A	3	3	1	1.2981290817260742	0	1
+v_mutt_F05-A_mart_F08-A_mart_F06	v	1	1	1	0.5000131130218506	0	0
+a_cap_H08-v_cup_H05-a_cap_H07	v	2	2	1	1.1739041805267334	0	0
+v_putt_F05-v_putt_F07-a_pat_F08	a	3	3	1	0.4843788146972656	0	2
+i_bik_F08-i_bik_F05-I_beak_F04	I	3	3	1	0.15527987480163574	0	0
+v_putt_H08-A_part_H09-v_putt_H05	A	2	2	1	1.079660177230835	0	0
+A_lark_F04-v_luck_F05-A_lark_F07	v	2	2	1	0.6219217777252197	0	0
+i_bik_F09-I_beak_F07-I_beak_F06	i	1	1	1	0.4787888526916504	0	1
+A_mart_H06-A_mart_H09-v_mutt_H07	v	3	3	1	0.1441640853881836	0	1
+I_leak_F09-i_lick_F08-i_lick_F06	I	1	1	1	0.40977001190185547	0	0
+v_cup_F09-A_carp_F08-v_cup_F05	A	2	2	1	0.4843900203704834	0	1
+I_cheap_F04-i_chip_F07-i_chip_F05	I	1	1	1	0.477794885635376	0	0
+a_mat_F06-v_mutt_F07-v_mutt_F05	a	1	1	1	0.37241601943969727	0	1
+I_bean_F07-i_bin_F04-I_bean_F08	i	2	2	1	0.2721710205078125	0	0
+I_bean_H06-i_bin_H09-i_bin_H07	I	1	1	1	0.4697890281677246	0	0
+A_lark_H07-v_luck_H09-v_luck_H05	A	1	1	1	0.7842898368835449	0	0
+v_putt_F07-A_part_F09-A_part_F05	v	1	1	1	1.1416521072387695	0	0
+I_cheap_H04-i_chip_H09-I_cheap_H06	i	2	2	1	0.2806830406188965	0	0
+v_buck_H05-A_bark_H09-v_buck_H04	A	2	2	1	0.09165477752685547	0	1
+v_buck_F05-A_bark_F04-A_bark_F07	v	1	1	1	0.2212841510772705	0	1
+i_chip_F07-I_cheap_F09-I_cheap_F04	i	1	1	1	1.1448781490325928	0	1
+v_mutt_H08-a_mat_H09-a_mat_H04	v	1	1	1	0.4999227523803711	0	0
+A_part_H07-v_putt_H06-A_part_H05	v	2	1	0	0.22792768478393555	2	1
+A_bark_F09-v_buck_F05-v_buck_F07	A	1	1	1	0.3619241714477539	0	0
+v_putt_H09-v_putt_H04-A_part_H08	A	3	3	1	0.45566582679748535	0	0
+I_beak_H06-i_bik_H08-I_beak_H05	i	2	2	1	0.846724271774292	0	0
+a_mat_F04-v_mutt_F06-a_mat_F09	v	2	2	1	0.239915132522583	0	0
+
+#TotalErreurs#2TempsTotal#3min 32sec
+#00#Tue Mar 02 16:24:52 2021#ListeOddity_1.txt
+Vowel	Sound Files	Response	FirstResponse	Result	Response Time	NbErreurs	nbRepetitions
+v_mutt_H05-A_mart_H08-A_mart_H06	v	1	1	1	0.2982358932495117	0	0
+v_cup_F07-a_cap_F08-v_cup_F04	a	2	2	1	0.3542923927307129	0	0
+A_carp_F05-v_cup_F06-A_carp_F07	v	2	2	1	1.3485100269317627	0	0
+i_min_F06-i_min_F05-I_mean_F07	I	3	3	1	0.09198713302612305	0	0
+v_cup_F05-v_cup_F06-a_cap_F07	a	3	3	1	0.25000977516174316	0	2
+I_leak_H08-I_leak_H07-i_lick_H05	i	3	3	1	0.36391496658325195	0	0
+I_beak_H06-I_beak_H05-i_bik_H09	i	3	3	1	0.3248288631439209	0	0
+A_mart_F07-v_mutt_F05-v_mutt_F09	A	1	1	1	0.6940920352935791	0	0
+I_bean_H07-i_bin_H04-I_bean_H08	i	2	2	1	0.15695810317993164	0	0
+a_mat_H04-a_mat_H05-v_mutt_H08	v	3	3	1	0.25653791427612305	0	0
+I_leak_F08-I_leak_F07-i_lick_F05	i	3	3	1	0.2031397819519043	0	0
+a_mat_F04-a_mat_F05-v_mutt_F08	v	3	3	1	0.4152858257293701	0	1
+i_bik_F08-I_beak_F06-i_bik_F09	I	2	2	1	0.546882152557373	0	1
+i_bin_H08-i_bin_H09-I_bean_H07	I	3	3	1	1.893286943435669	0	0
+v_putt_H04-a_pat_H05-a_pat_H06	v	1	1	1	0.7296700477600098	0	0
+a_mat_F06-v_mutt_F07-v_mutt_F05	a	1	1	1	0.4063689708709717	0	0
+v_putt_F09-a_pat_F05-v_putt_F07	a	2	2	1	0.32813501358032227	0	1
+A_bark_H09-v_buck_H05-v_buck_H07	A	1	1	1	0.44855403900146484	0	0
+v_buck_H08-a_back_H07-a_back_H04	v	1	1	1	0.6333730220794678	0	0
+A_lark_H07-v_luck_H09-v_luck_H05	A	1	1	1	0.44412684440612793	0	0
+A_lark_F07-v_luck_F09-v_luck_F05	A	1	1	1	0.32306504249572754	0	2
+a_mat_H06-v_mutt_H07-v_mutt_H05	a	1	1	1	0.39716482162475586	0	0
+v_cup_H05-v_cup_H06-a_cap_H07	a	3	3	1	0.33403992652893066	0	0
+v_putt_H05-v_putt_H07-a_pat_H08	a	3	3	1	0.1168210506439209	0	0
+v_buck_F06-v_buck_F09-a_back_F08	a	3	3	1	0.39052391052246094	0	0
+v_mutt_H05-v_mutt_H07-A_mart_H08	A	3	3	1	1.3042550086975098	0	0
+a_mat_F04-v_mutt_F06-a_mat_F09	v	2	2	1	0.6092190742492676	0	0
+a_pat_H06-v_putt_H04-a_pat_H08	v	2	2	1	0.08317017555236816	0	1
+v_cup_F07-A_carp_F04-A_carp_F09	v	1	1	1	0.4668998718261719	0	0
+a_lack_H06-a_lack_H05-v_luck_H09	v	3	3	1	0.46654391288757324	0	0
+
+#TotalErreurs#0TempsTotal#3min 7sec
+#00#Fri Mar 05 22:46:19 2021#ListeOddity_1.txt
+Vowel	Sound Files	Response	FirstResponse	Result	Response Time	NbErreurs	nbRepetitions
+a_lack_H06-a_lack_H05-v_luck_H09	v	3	3	1	0.11791706085205078	0	0
+I_bean_H04-I_bean_H05-i_bin_H09	i	3	2	0	0.19205188751220703	2	0
+I_leak_H09-i_lick_H08-i_lick_H06	I	1	1	1	0.8125112056732178	0	0
+I_bean_H06-i_bin_H09-i_bin_H07	I	1	1	1	1.3386642932891846	0	0
+A_mart_F06-A_mart_F09-v_mutt_F07	v	3	3	1	0.684927225112915	0	0
+I_beak_H07-i_bik_H05-i_bik_H08	I	1	1	1	1.7187490463256836	0	0
+a_pat_H09-v_putt_H06-v_putt_H07	a	1	2	0	1.4530320167541504	2	1
+i_bik_H08-I_beak_H06-i_bik_H09	I	2	2	1	0.738900899887085	0	0
+v_mutt_F05-A_mart_F08-A_mart_F06	v	1	1	1	0.7141461372375488	0	1
+v_luck_F08-A_lark_F06-A_lark_F04	v	1	1	1	0.7343871593475342	0	0
+I_bean_F04-I_bean_F05-i_bin_F09	i	3	2	0	0.5881650447845459	2	0
+v_putt_F05-v_putt_F07-a_pat_F08	a	3	2	0	1.343754768371582	2	0
+v_mutt_F09-v_mutt_F05-a_mat_F06	a	3	3	1	0.2605459690093994	0	1
+A_carp_F05-v_cup_F06-A_carp_F07	v	2	2	1	0.3457920551300049	0	0
+A_bark_F06-v_buck_F04-A_bark_F09	v	2	2	1	0.5156328678131104	0	0
+I_bean_F06-i_bin_F09-i_bin_F07	I	1	1	1	0.7515482902526856	0	0
+i_lick_H04-I_leak_H05-i_lick_H09	I	2	2	1	1.9374871253967285	0	0
+a_back_H08-a_back_H07-v_buck_H06	v	3	3	1	0.9843811988830566	0	0
+a_back_H05-v_buck_H08-v_buck_H07	a	1	1	1	0.7500078678131104	0	0
+I_beak_H06-i_bik_H08-I_beak_H05	i	2	2	1	3.2867910861968994	0	0
+a_back_H04-v_buck_H08-a_back_H07	v	2	2	1	0.4218878746032715	0	0
+i_bin_H09-I_bean_H06-i_bin_H08	I	2	1	0	0.6481752395629883	2	0
+v_cup_H07-a_cap_H08-v_cup_H04	a	2	2	1	1.1194000244140625	0	0
+a_lack_H05-v_luck_H09-a_lack_H06	v	2	2	1	0.44605183601379395	0	0
+a_back_F04-v_buck_F08-a_back_F07	v	2	2	1	1.0197806358337402	0	0
+a_pat_H06-v_putt_H04-a_pat_H08	v	2	2	1	6.4212281703948975	0	1
+A_mart_F08-v_mutt_F04-A_mart_F05	v	2	2	1	1.2066638469696045	0	1
+I_leak_F09-i_lick_F08-i_lick_F06	I	1	1	1	0.6749269962310791	0	0
+a_pat_F06-v_putt_F04-a_pat_F08	v	2	2	1	0.6375401020050049	0	0
+i_bin_H08-i_bin_H09-I_bean_H07	I	3	3	1	0.7968862056732178	0	0
+
+#TotalErreurs#10TempsTotal#3min 54sec
+#00#Tue Mar 09 19:11:12 2021#ListeOddity_1.txt
+Vowel	Sound Files	Response	FirstResponse	Result	Response Time	NbErreurs	nbRepetitions
+i_lick_H04-I_leak_H05-i_lick_H09	I	2	2	1	0.45313525199890137	0	0
+v_buck_F06-v_buck_F09-a_back_F08	a	3	3	1	0.37501001358032227	0	0
+I_mean_F06-i_min_F07-I_mean_F05	i	2	2	1	0.2822840213775635	0	0
+v_cup_F07-A_carp_F04-A_carp_F09	v	1	1	1	0.14377307891845703	0	0
+i_bin_H09-I_bean_H06-i_bin_H08	I	2	2	1	0.17079496383666992	0	1
+i_chip_H07-I_cheap_H09-I_cheap_H04	i	1	1	1	0.6465668678283691	0	0
+v_putt_F09-a_pat_F05-v_putt_F07	a	2	2	1	0.18751287460327148	0	0
+a_pat_H06-v_putt_H04-a_pat_H08	v	2	1	0	0.08366203308105469	2	1
+a_cap_F05-a_cap_F07-v_cup_F09	v	3	3	1	0.40366697311401367	0	0
+v_cup_F07-v_cup_F08-A_carp_F09	A	3	3	1	0.08815979957580566	0	0
+I_mean_H05-i_min_H04-i_min_H08	I	1	1	1	0.5821831226348877	0	0
+v_mutt_H05-v_mutt_H07-A_mart_H08	A	3	3	1	0.1864337921142578	0	0
+A_carp_H08-v_cup_H06-v_cup_H09	A	1	1	1	0.18690204620361328	0	1
+I_cheap_F04-i_chip_F07-i_chip_F05	I	1	1	1	2.477318286895752	0	1
+v_cup_H07-a_cap_H08-v_cup_H04	a	2	1	0	0.20816612243652344	2	0
+a_pat_F06-v_putt_F04-a_pat_F08	v	2	2	1	0.765873908996582	0	1
+a_cap_F07-v_cup_F09-v_cup_F05	a	1	1	1	0.8173339366912842	0	0
+a_pat_H09-v_putt_H06-v_putt_H07	a	1	1	1	0.8527708053588867	0	2
+a_cap_H07-v_cup_H09-v_cup_H05	a	1	1	1	1.7062270641326904	0	0
+A_bark_F09-v_buck_F05-v_buck_F07	A	1	1	1	0.40146708488464355	0	0
+v_mutt_H06-A_mart_H09-v_mutt_H05	A	2	2	1	0.42442798614501953	0	0
+A_mart_F08-v_mutt_F04-A_mart_F05	v	2	3	0	0.13954877853393555	2	2
+v_luck_H08-A_lark_H06-A_lark_H04	v	1	1	1	0.32813525199890137	0	0
+I_mean_H05-I_mean_H08-i_min_H04	i	3	3	1	2.385435104370117	0	0
+v_putt_F09-v_putt_F04-A_part_F08	A	3	3	1	0.2232959270477295	0	0
+a_back_H04-v_buck_H08-a_back_H07	v	2	2	1	0.09265470504760742	0	1
+i_min_F07-I_mean_F04-I_mean_F05	i	1	3	0	0.15364670753479004	2	0
+v_mutt_F09-v_mutt_F05-a_mat_F06	a	3	3	1	0.2952890396118164	0	1
+a_back_F08-a_back_F07-v_buck_F06	v	3	3	1	0.08615398406982422	0	1
+A_lark_F05-A_lark_F04-v_luck_F08	v	3	3	1	0.15929388999938965	0	0
+
+#TotalErreurs#8TempsTotal#3min 43sec
+#00#Fri Mar 12 12:16:51 2021#ListeOddity_1.txt
+Vowel	Sound Files	Response	FirstResponse	Result	Response Time	NbErreurs	nbRepetitions
+A_mart_H06-A_mart_H09-v_mutt_H07	v	3	3	1	0.47577500343322754	0	0
+v_cup_F05-v_cup_F06-a_cap_F07	a	3	3	1	0.8156030178070068	0	0
+A_lark_H05-A_lark_H04-v_luck_H08	v	3	3	1	0.12956595420837402	0	0
+v_luck_F09-A_lark_F05-v_luck_F07	A	2	2	1	0.22878503799438477	0	0
+a_cap_F05-a_cap_F07-v_cup_F09	v	3	3	1	0.3587839603424072	0	0
+A_mart_F06-A_mart_F09-v_mutt_F07	v	3	3	1	0.15625500679016113	0	0
+a_cap_F07-v_cup_F09-v_cup_F05	a	1	1	1	0.32501912117004395	0	0
+a_mat_H04-v_mutt_H06-a_mat_H09	v	2	2	1	0.3850429058074951	0	0
+v_buck_H06-a_back_H07-v_buck_H08	a	2	2	1	0.15616369247436523	0	0
+v_cup_H09-A_carp_H08-v_cup_H05	A	2	2	1	0.25202488899230957	0	1
+A_part_F07-A_part_F06-v_putt_F05	v	3	3	1	0.2837817668914795	0	1
+v_putt_F04-a_pat_F05-a_pat_F06	v	1	1	1	0.650148868560791	0	0
+v_putt_F05-v_putt_F07-a_pat_F08	a	3	3	1	0.3906238079071045	0	0
+i_min_H07-I_mean_H04-I_mean_H05	i	1	1	1	0.2952849864959717	0	0
+A_lark_F07-v_luck_F09-v_luck_F05	A	1	1	1	0.38602709770202637	0	1
+I_bean_H07-i_bin_H04-I_bean_H08	i	2	2	1	0.12703633308410645	0	0
+i_bin_H08-i_bin_H09-I_bean_H07	I	3	3	1	0.5823278427124023	0	0
+a_back_H04-v_buck_H08-a_back_H07	v	2	2	1	0.3457820415496826	0	1
+v_cup_F07-A_carp_F04-A_carp_F09	v	1	1	1	0.2968788146972656	0	0
+I_cheap_H04-i_chip_H09-I_cheap_H06	i	2	2	1	0.09368181228637695	0	0
+v_buck_H04-v_buck_H05-A_bark_H09	A	3	3	1	0.11340689659118652	0	0
+I_leak_F09-i_lick_F04-I_leak_F07	i	2	2	1	0.3215639591217041	0	0
+A_part_F07-v_putt_F06-A_part_F05	v	2	2	1	0.3930230140686035	0	1
+I_beak_F06-I_beak_F05-i_bik_F09	i	3	3	1	0.10938501358032227	0	0
+A_part_H09-v_putt_H04-v_putt_H05	A	1	1	1	0.43491196632385254	0	0
+v_putt_F09-a_pat_F05-v_putt_F07	a	2	2	1	0.42290472984313965	0	1
+I_mean_F05-i_min_F04-i_min_F08	I	1	1	1	1.400141954421997	0	0
+v_putt_H07-A_part_H09-A_part_H05	v	1	1	1	0.39316320419311523	0	1
+i_chip_H09-I_cheap_H08-i_chip_H07	I	2	2	1	0.3346691131591797	0	0
+v_cup_H07-a_cap_H08-v_cup_H04	a	2	2	1	0.3326609134674072	0	1
+
+#TotalErreurs#0TempsTotal#2min 58sec
+#00#Tue Mar 16 15:20:18 2021#ListeOddity_1.txt
+Vowel	Sound Files	Response	FirstResponse	Result	Response Time	NbErreurs	nbRepetitions
+A_carp_F05-A_carp_F09-v_cup_F04	v	3	3	1	0.1260359287261963	0	0
+v_putt_H07-A_part_H09-A_part_H05	v	1	1	1	0.5624892711639404	0	1
+i_min_F07-I_mean_F04-i_min_F06	I	2	2	1	0.29726314544677734	0	0
+I_beak_F06-I_beak_F05-i_bik_F09	i	3	3	1	1.266662359237671	0	0
+i_lick_F04-I_leak_F05-i_lick_F09	I	2	2	1	0.4304039478302002	0	0
+a_cap_H08-v_cup_H05-a_cap_H07	v	2	2	1	1.0337529182434082	0	0
+I_leak_F08-I_leak_F07-i_lick_F05	i	3	3	1	0.30132412910461426	0	0
+v_luck_H08-A_lark_H06-A_lark_H04	v	1	1	1	0.3749980926513672	0	0
+v_mutt_H09-v_mutt_H05-a_mat_H06	a	3	3	1	0.0861668586730957	0	0
+v_luck_H09-A_lark_H05-v_luck_H07	A	2	1	0	3.5292418003082275	2	0
+I_leak_H08-I_leak_H07-i_lick_H05	i	3	3	1	0.3109114170074463	0	0
+i_bin_F04-I_bean_F09-I_bean_F07	i	1	1	1	0.264035701751709	0	0
+A_carp_H05-A_carp_H09-v_cup_H04	v	3	2	0	0.6295297145843506	2	0
+i_bin_H09-I_bean_H06-i_bin_H08	I	2	2	1	0.45564699172973633	0	0
+a_pat_H08-a_pat_H06-v_putt_H04	v	3	1	0	0.55889892578125	2	0
+I_bean_H04-I_bean_H05-i_bin_H09	i	3	3	1	0.9711921215057373	0	0
+v_cup_F09-A_carp_F08-v_cup_F05	A	2	2	1	0.6151928901672363	0	0
+i_min_F07-I_mean_F04-I_mean_F05	i	1	1	1	0.6406137943267822	0	0
+I_bean_F04-I_bean_F05-i_bin_F09	i	3	2	0	0.4948999881744385	2	1
+v_putt_F04-a_pat_F05-a_pat_F06	v	1	1	1	1.3200170993804932	0	0
+v_buck_H06-a_back_H07-v_buck_H08	a	2	2	1	0.3225290775299072	0	0
+I_cheap_H04-i_chip_H07-i_chip_H05	I	1	1	1	0.6607630252838135	0	0
+I_bean_F06-i_bin_F09-i_bin_F07	I	1	1	1	0.770068883895874	0	0
+v_putt_F09-v_putt_F04-A_part_F08	A	3	3	1	0.16079211235046387	0	0
+a_back_F05-v_buck_F08-v_buck_F07	a	1	1	1	0.5775282382965088	0	0
+A_mart_H06-A_mart_H09-v_mutt_H07	v	3	1	0	0.43852686882019043	2	0
+A_part_H07-A_part_H06-v_putt_H05	v	3	3	1	0.0881648063659668	0	0
+v_luck_F08-A_lark_F06-A_lark_F04	v	1	1	1	0.3125030994415283	0	0
+a_mat_F04-v_mutt_F06-a_mat_F09	v	2	2	1	0.18750786781311035	0	0
+A_mart_F06-A_mart_F09-v_mutt_F07	v	3	3	1	1.8592877388000488	0	1
+
+#TotalErreurs#10TempsTotal#3min 20sec
+#00#Fri Mar 19 20:03:50 2021#ListeOddity_1.txt
+Vowel	Sound Files	Response	FirstResponse	Result	Response Time	NbErreurs	nbRepetitions
+i_lick_F09-I_leak_F08-I_leak_F07	i	1	1	1	0.8658957481384277	0	0
+I_mean_H05-I_mean_H08-i_min_H04	i	3	3	1	0.13311100006103516	0	0
+I_cheap_H05-I_cheap_H07-i_chip_H09	i	3	3	1	4.116400718688965	0	1
+a_mat_F04-a_mat_F05-v_mutt_F08	v	3	3	1	0.6039259433746338	0	0
+A_mart_H07-v_mutt_H05-v_mutt_H09	A	1	1	1	0.8426082134246826	0	0
+I_bean_F04-I_bean_F05-i_bin_F09	i	3	3	1	0.9259059429168701	0	0
+A_bark_F09-A_bark_F04-v_buck_F09	v	3	3	1	0.08767294883728027	0	1
+v_cup_H06-a_cap_H07-a_cap_H04	v	1	1	1	1.412550926208496	0	1
+i_chip_H05-i_chip_H08-I_cheap_H04	I	3	3	1	0.5581228733062744	0	1
+A_carp_F05-v_cup_F06-A_carp_F07	v	2	2	1	0.5457851886749268	0	0
+v_putt_H09-a_pat_H05-v_putt_H07	a	2	1	0	1.086639165878296	2	0
+v_putt_H08-A_part_H09-v_putt_H05	A	2	2	1	0.8634028434753418	0	0
+v_buck_H08-a_back_H07-a_back_H04	v	1	1	1	2.9683449268341064	0	0
+i_lick_F04-I_leak_F05-i_lick_F09	I	2	2	1	0.8048954010009766	0	0
+v_luck_F05-a_lack_F04-a_lack_F08	v	1	1	1	0.787775993347168	0	0
+v_cup_F07-v_cup_F08-A_carp_F09	A	3	3	1	0.9026250839233398	0	0
+v_cup_F09-A_carp_F08-v_cup_F05	A	2	2	1	0.9578979015350342	0	3
+I_beak_F06-i_bik_F08-I_beak_F05	i	2	2	1	0.4616811275482178	0	0
+a_mat_H06-v_mutt_H07-v_mutt_H05	a	1	1	1	0.49293971061706543	0	0
+i_bin_H09-I_bean_H06-i_bin_H08	I	2	2	1	0.8204870223999023	0	0
+A_lark_F07-v_luck_F09-v_luck_F05	A	1	1	1	1.277113914489746	0	0
+i_chip_F07-I_cheap_F09-I_cheap_F04	i	1	1	1	0.43884801864624023	0	0
+a_pat_H08-a_pat_H06-v_putt_H04	v	3	3	1	0.5477018356323242	0	1
+I_leak_H08-I_leak_H07-i_lick_H05	i	3	3	1	0.3165760040283203	0	0
+a_mat_F04-v_mutt_F06-a_mat_F09	v	2	2	1	1.762665033340454	0	0
+a_lack_H06-v_luck_H04-v_luck_H09	a	1	3	0	0.17187786102294922	2	1
+v_mutt_F09-v_mutt_F05-a_mat_F06	a	3	3	1	0.3366580009460449	0	1
+I_beak_H06-I_beak_H05-i_bik_H09	i	3	3	1	0.9511220455169678	0	0
+I_mean_H05-i_min_H04-i_min_H08	I	1	1	1	0.37392091751098633	0	0
+a_back_F04-v_buck_F08-a_back_F07	v	2	2	1	0.38303494453430176	0	0
+
+#TotalErreurs#4TempsTotal#3min 38sec
+#00#Tue Mar 23 22:37:37 2021#ListeOddity_1.txt
+Vowel	Sound Files	Response	FirstResponse	Result	Response Time	NbErreurs	nbRepetitions
+v_cup_H07-v_cup_H08-A_carp_H09	A	3	3	1	0.5941097736358643	0	0
+a_back_F08-a_back_F07-v_buck_F06	v	3	3	1	0.9905080795288086	0	1
+i_bin_H08-i_bin_H09-I_bean_H07	I	3	3	1	0.0781400203704834	0	0
+i_chip_F09-I_cheap_F08-i_chip_F07	I	2	2	1	0.26814699172973633	0	0
+a_pat_F09-v_putt_F06-v_putt_F07	a	1	1	1	0.08366990089416504	0	1
+v_cup_H06-a_cap_H07-a_cap_H04	v	1	1	1	0.37754130363464355	0	0
+I_bean_H06-i_bin_H09-i_bin_H07	I	1	1	1	0.22378993034362793	0	0
+v_mutt_H08-a_mat_H09-a_mat_H04	v	1	1	1	0.4843740463256836	0	0
+v_mutt_H05-A_mart_H08-A_mart_H06	v	1	1	1	0.17188191413879395	0	0
+A_bark_F09-v_buck_F05-v_buck_F07	A	1	1	1	0.09478998184204102	0	1
+i_min_F07-I_mean_F04-i_min_F06	I	2	2	1	0.3639039993286133	0	0
+v_putt_H09-a_pat_H05-v_putt_H07	a	2	1	0	0.15728306770324707	2	0
+I_mean_H06-i_min_H07-I_mean_H05	i	2	2	1	0.17299413681030273	0	0
+I_bean_F07-i_bin_F04-I_bean_F08	i	2	2	1	0.5462641716003418	0	0
+v_cup_F06-a_cap_F07-a_cap_F04	v	1	1	1	0.5016629695892334	0	0
+I_cheap_F05-I_cheap_F07-i_chip_F09	i	3	3	1	0.29578495025634766	0	0
+I_cheap_F04-i_chip_F09-I_cheap_F06	i	2	2	1	0.16943001747131348	0	0
+I_mean_F05-i_min_F04-i_min_F08	I	1	1	1	0.35827088356018066	0	0
+v_putt_F09-v_putt_F04-A_part_F08	A	3	3	1	0.25653910636901855	0	0
+v_cup_F09-A_carp_F08-v_cup_F05	A	2	2	1	0.31250500679016113	0	0
+a_cap_H08-v_cup_H05-a_cap_H07	v	2	2	1	0.300764799118042	0	0
+A_carp_H08-v_cup_H06-v_cup_H09	A	1	1	1	0.7187480926513672	0	0
+v_cup_H09-A_carp_H08-v_cup_H05	A	2	2	1	0.4390389919281006	0	0
+A_part_F07-A_part_F06-v_putt_F05	v	3	3	1	0.20666909217834473	0	1
+A_bark_H09-A_bark_H04-v_buck_H09	v	3	2	0	0.1572861671447754	2	1
+v_putt_F09-a_pat_F05-v_putt_F07	a	2	2	1	0.2862858772277832	0	1
+a_cap_F05-a_cap_F07-v_cup_F09	v	3	3	1	0.3734138011932373	0	0
+i_chip_F05-i_chip_F08-I_cheap_F04	I	3	3	1	0.5806558132171631	0	0
+A_bark_H09-v_buck_H05-v_buck_H07	A	1	1	1	0.38353776931762695	0	0
+A_part_F07-v_putt_F06-A_part_F05	v	2	2	1	0.9110651016235352	0	0
+
+#TotalErreurs#4TempsTotal#3min 1sec

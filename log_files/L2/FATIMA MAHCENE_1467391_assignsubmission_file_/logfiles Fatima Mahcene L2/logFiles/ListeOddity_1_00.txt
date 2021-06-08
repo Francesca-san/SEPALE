@@ -1,0 +1,34 @@
+#00#Sun Apr 18 17:07:04 2021#ListeOddity_1.txt
+Vowel	Sound Files	Response	FirstResponse	Result	Response Time	NbErreurs	nbRepetitions
+A_mart_H07-v_mutt_H05-v_mutt_H09	A	1	3	0	1.170516014099121	2	1
+v_putt_F09-a_pat_F05-v_putt_F07	a	2	2	1	0.937514066696167	0	0
+v_cup_F07-A_carp_F04-A_carp_F09	v	1	1	1	0.5515170097351074	0	2
+a_lack_F06-v_luck_F04-v_luck_F09	a	1	3	0	0.42717599868774414	2	1
+v_mutt_F05-a_mat_F08-v_mutt_F06	a	2	2	1	0.03576087951660156	0	1
+v_luck_F05-a_lack_F06-v_luck_F07	a	2	1	0	0.10779118537902832	2	2
+v_buck_H04-v_buck_H05-A_bark_H09	A	3	3	1	0.28126096725463867	0	2
+i_chip_H05-i_chip_H08-I_cheap_H04	I	3	3	1	1.5937509536743164	0	0
+v_putt_H09-v_putt_H04-A_part_H08	A	3	3	1	0.7343771457672119	0	0
+A_lark_F07-v_luck_F09-v_luck_F05	A	1	3	0	0.23438692092895508	3	0
+v_putt_H05-v_putt_H07-a_pat_H08	a	3	3	1	0.1370401382446289	0	0
+I_beak_H06-I_beak_H05-i_bik_H09	i	3	3	1	0.5564141273498535	0	1
+I_mean_F05-I_mean_F08-i_min_F04	i	3	3	1	0.3911111354827881	0	0
+v_putt_H04-a_pat_H05-a_pat_H06	v	1	1	1	0.8190262317657471	0	0
+v_cup_F07-a_cap_F08-v_cup_F04	a	2	3	0	0.9244887828826904	3	0
+i_bin_H09-I_bean_H06-i_bin_H08	I	2	2	1	0.6003820896148682	0	1
+a_lack_H05-v_luck_H09-a_lack_H06	v	2	2	1	0.6653063297271729	0	1
+i_lick_F04-I_leak_F05-i_lick_F09	I	2	2	1	0.2610318660736084	0	1
+a_back_F08-a_back_F07-v_buck_F06	v	3	3	1	1.125000238418579	0	2
+i_chip_F09-I_cheap_F08-i_chip_F07	I	2	1	0	0.9375138282775879	2	1
+a_pat_F09-v_putt_F06-v_putt_F07	a	1	1	1	0.9556517601013184	0	2
+a_lack_F05-v_luck_F09-a_lack_F06	v	2	2	1	1.130086898803711	0	0
+v_mutt_F06-A_mart_F09-v_mutt_F05	A	2	2	1	0.7686939239501953	0	0
+I_cheap_H05-I_cheap_H07-i_chip_H09	i	3	3	1	1.1598479747772217	0	0
+a_pat_F06-v_putt_F04-a_pat_F08	v	2	2	1	0.7348039150238037	0	0
+I_leak_F08-I_leak_F07-i_lick_F05	i	3	3	1	0.5469129085540771	0	0
+A_bark_H09-v_buck_H05-v_buck_H07	A	1	2	0	0.08663582801818848	2	0
+a_cap_H05-a_cap_H07-v_cup_H09	v	3	3	1	1.176966905593872	0	0
+v_buck_H06-a_back_H07-v_buck_H08	a	2	2	1	0.6215460300445557	0	0
+v_cup_H07-A_carp_H04-A_carp_H09	v	1	2	0	0.5574898719787598	2	0
+
+#TotalErreurs#18TempsTotal#7min 56sec
