@@ -49,19 +49,20 @@ def count_right(dico, key='Stimulus'):
             result[dico[key][i]] += 1
     return result
 
-def stat_exo(fichier, key="Vowel"):
-    dico_exo = create_dico(fichier)
+def exo_stat(file, key="Vowel"):
+    dico_exo = create_dico(file)
     err_dico = count_errors(dico_exo, key=key, count_one=False)
     right_dico = count_right(dico_exo, key=key)
     time_dico = count_with_criteria(dico_exo, key=key, criteria='Response Time')
 
     keys = set(list(err_dico.keys()) + list(right_dico.keys()))
-    # Dictionnaire résultat dont chaque élément est
-    # key : [attribut1, attribut2, attribut3]
-    # On peut rajouter des attributs au besoin
-    # attribut 1 = erreurs, attribut2 = right, attribut3 = response time mean
+    # key : [attribute 1, attribute 2, attribute 3]
+    # We can add other attributes if needed
+    # attribute 1 = sum of wrong answers, 
+    # attribute 2 = sum of right answers, 
+    # attribute 3 = mean time
     res = {}
-    # pour les moyennes, on initialise les compteurs à 0
+    # for the average, we initialise the counter at 0
     time_counters = {}
     for k in keys:
         time_counters[k] = 0
@@ -79,46 +80,44 @@ def stat_exo(fichier, key="Vowel"):
             
         if k in time_dico.keys():
             time = time_dico[k]
-            # On incrémente le compteur
+            # We increase the counter by increments
             time_counters[k] += 1
         else:
             time = 0
-        # Pour le moment on stocke le temps total
+        # for the moment we keep aside the total time
         res[k] = [error, right, time]
     
-    # On fait la moyenne pour toutes les clés
+    # We calculate the average for each key
     for k in keys:
         res[k][2] /= time_counters[k]
     
     return res
 
-def stat_mult_exo(liste_fichiers, key="Vowel"):
-    # Dictionnaire résultat dont chaque élément est
-    # key : [attribut1, attribut2]
-    # On peut rajouter des attributs au besoin
-    # attribut 1 = somme des erreurs, attribut2 = somme des bonnes réponses
-    dico_res = {}
-    for fichier in liste_fichiers:
-        # On récupère les statistiques d'un exo
-        dico_exo = stat_exo(fichier, key=key)
-        # On agrège les données
-        for k, v in dico_exo.items():
-            # si on a déjà vu passer la clé, on ajoute
+def stat_mult_exo(list_files, key="Vowel"):
+    # key : [attribute 1, attribute 2]
+    # attribute 1 = sum of wrong answers, attribute 2 = sum of right answers
+    res_dico = {}
+    for file in file:
+        # We retrieve the statistics for an exercise
+        exo_dico = exo_stat(file, key=key)
+        # We combine the data
+        for k, v in exo_dico.items():
+            # If we have already encountered this key, we add the value
             if k in dico_res.keys():
-                # on agrège le premier attribut
-                dico_res[k][0] += dico_exo[k][0]
-                # on agrège le second attribut
-                dico_res[k][1] += dico_exo[k][1]
+                # we combine the first attribute
+                res_dico[k][0] += exo_dico[k][0]
+                # we combine the second attribute
+                res_dico[k][1] += exo_dico[k][1]
             else:
-                # sinon, on setup avec les valeurs correspondant
-                # à la clé pour l'exercice courant
-                dico_res[k] = dico_exo[k]
+                # If not, we set up the values corresponding
+                # to the key for the current exercise
+                res_dico[k] = exo_dico[k]
         
-    return dico_res
+    return res_dico
 
 
-def print_stat_exo(dico_exo):
+def print_stat_exo(exo_dico):
     print("key | errors | right | mean resp time")
     print("--------------------")
-    for k, v in dico_exo.items():
+    for k, v in exo_dico.items():
         print(f"{k}   |  {v[0]}   | {v[1]} | {v[2]}")

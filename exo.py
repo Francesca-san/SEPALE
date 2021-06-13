@@ -1,70 +1,82 @@
-# On importe des petits modules python bien sympa
-# numpy : fonctions mathématiques vraiment convenables !
+# We import python modules
+# numpy : a mathematical function that is very useful!
 import numpy as np
 
 
-# On définit la classe Exo
+# We define a new class called "Exo"
 class Exo:
     '''
-    Ceci est la description de la classe
-    Si tu as un problème avec cette classe
-    tu peux taper help(Exo)
+    This is a description of the class, 
+    If you have any problem with it
+    you can always write help(Exo)
     '''
-    # Ceci va être la fonction d'initialisation d'un exercice
-    # son argument est path, le chemin du fichier
+    # This is the initializing function of any exercise
+    # It has only one argument, called "path"
     def __init__(self, path):
-        # Ici nous définissons les attributs communs à tous les exos
+        # Here we define the shared attributes of all the exercises
+        # They all have a path
         self.path = path
-        # Les keys numériques valables pour tous les exos
+        # We can find several numeric keys in those exercises: 
+        # Response time, number of mistakes, and repetitions
         self.numeric_keys = ['Response Time', 'NbErreurs', 'Repetitions']
-        # Tout exo contient des lignes
+        # All the exercises have lines that 
+        # have to be taken, cleansed, and parsed
         self.get_lines()
         self.clean_lines()
         self.parse_lines()
-    
+        
+    # Here we take the function get_lines that 
+    # can be used on any AFC exercise. It gets the 
+    # lines of the files and reads them, hence 'r'.
     def get_lines(self):
         f = open(self.path, 'r')
-        # on récupère les lignes
+        # We take the lines
         self.lines = f.readlines()
-        # on ferme le fichier
+        # We close the file
         f.close()
-    
+        
+    # This function cleans the lines of the files
     def clean_lines(self):
-        # On enlève les \n pour tout le monde
+        # We remove the \n that are then replaced
+        # by a space. \n are line breaks.
         for i in range(len(self.lines)):
             self.lines[i] = self.lines[i].replace("\n", "")
-        # Si la ligne est vide, on la supprime
-        # On fait une liste contenant les indices
-        # des lignes vides pour leur défoncer la 
-        # tronche ensuite mouhahahahaha
+        # If the line is empty, we delete it
+        # We maka a list which contains all the 
+        # empty lines (= to_delete.append(i))
         to_delete = []
         for i in range(len(self.lines)):
             if len(self.lines[i]) == 0:
                 to_delete.append(i)
-        # Défonçage dans 3, 2 ....
+        # then we delete (del) what has been
+        # added in to_delete
         for i in to_delete:
             del self.lines[i]   
         
+    # We parse the lines so as to assign attributes to lines    
     def parse_lines(self):
         attributs = []
-        # On sépare les lignes selon les tabulations
+        # We separate lines according to the tabulation
         for l in self.lines:
             attributs.append(l.split('\t'))
-        # On setup la date et les keys
+        # The date is the first line -> 0
         self.date = attributs[0]
+        # The keys are the second line --> 1
         self.keys = np.array(attributs[1])
-        
+        # The data is to be found from the third
+        # line (2) to the penultimate (-1)
         data = attributs[2:-1]
-        
+        # The last line is the number of mistakes
+        # and repetitions --> stats_total
         self.stats_total = attributs[-1]
         columns = []
-        
         for j, k in enumerate(self.keys):
             if k in self.numeric_keys:
                 columns.append(np.array([float(data[i][j]) for i in range(len(data))]))
             else:
                 columns.append(np.array([data[i][j] for i in range(len(data))]))
-        # On a bien contruit columns, c'est le notre maintenant !!
+        # We have defined the content of the columns, now we have 
+        # to indicate that it belongs to class Exo, hence 'self'
         self.columns = columns
         # Pour ne pas perdre ses clés !
         self.key_to_index = {}
@@ -79,26 +91,22 @@ class Exo:
     
     def criteria_by_key(self, key, criteria, zeros=False):
         if key not in self.keys:
-            raise Exception('key not in my keys !')
+            raise Exception('Key not in my keys !')
         if criteria not in self.keys:
-            raise Exception('criteria not in my keys !')
+            raise Exception('Criteria not in my keys !')
             
-        # on récupère l'indice de la key/colonne
+        # We retrieve the index number of the key/column
         k_index = self.key_to_index[key]
-        # on récupère l'indice du criteria/colonne
+        # We retrieve the index number of the criteria/column
         c_index = self.key_to_index[criteria]
-        # On récopère les colonnes
+        # We retrieve the columns
         key_column = self.columns[k_index]
         criteria_column = self.columns[c_index]
         
         dico = {}
-        # Pour chaque key, on garde trace
-        # de la valeur du critère et du nombre 
-        # de fois ou l'on rencontre cette clé
-        # pour chaque key, elle pointe
-        # vers un tableau qui est une structure
-        # assez pratique tavu si on veut rajouter
-        # des éléments (par clé), au fur et à mesure
+        # For each key, we keep aside its 
+        # value and we count the number of 
+        # times we come across it.
         # dico[key] -> [valeur_critère, compteur d'occurences]
         for i, k in enumerate(key_column):
             value = criteria_column[i]
@@ -106,39 +114,41 @@ class Exo:
                 dico[k] = [value, 1]
             else:
                 dico[k] = [dico[k][0] + value, dico[k][1] + 1]
-        # On retourne notre dictionnaire
+        # We return the dictionary
         return dico
     
     
         
-# Nous définissons maintenant un type d'exercice particulier : les 2AFC
+# We define a specific type of exercise: the 2AFC
 class AFC2(Exo):
     '''
-    Ceci est la description de la classe
-    Si tu as un problème avec cette classe
-    tu peux taper help(AFC2)
+    This is a description of the class, 
+    If you have any problem with it
+    you can always write help(AFC2)
     '''
-    # Ceci est attribut spécifique à AFC2 qui répertorie
-    # les keys qui contiennent des quantités numériques
+    # This is a specific attribute of AFC2 which lists 
+    # the keys that contain numeric quantities
     
-    # Ceci va être la fonction d'initialisation d'un exercice
-    # son argument est path, le chemin du fichier
+    # This is the initializing function of the exercise
+    # It has only one argument, called "path"
     def __init__(self, path):
-        # Ici nous définissons les attributs communs à tous les exos
+        # Here, we define the attributes that are shared
+        # by the AFC2 exercises, they all have a path
         super().__init__(path)
 
         
-# Nous définissons maintenant un type d'exercice particulier : les 5AFC
+# We define a specific type of exercise: the 5AFC
 class AFC5(Exo):
     '''
-    Ceci est la description de la classe
-    Si tu as un problème avec cette classe
-    tu peux taper help(AFC2)
+    This is a description of the class, 
+    If you have any problem with it
+    you can always write help(AFC5)
     '''
-    # Ceci va être la fonction d'initialisation d'un exercice
-    # son argument est path, le chemin du fichier
+    # This is the initializing function of the exercise
+    # It has only one argument, called "path"
     def __init__(self, path):
-        # Ici nous définissons les attributs communs à tous les exos
+        # Here, we define the attributes that are shared
+        # by the AFC2 exercises, they all have a path
         super().__init__(path)
      
     
