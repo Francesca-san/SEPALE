@@ -2,9 +2,9 @@ import numpy as np
 
 def get_lines(path):
     f = open(path, 'r')
-    # on récupère les lignes
+    # we retrieve the lines
     lines = f.readlines()
-    # on ferme le fichier
+    # we close the file
     f.close()
     return lines
 
@@ -22,7 +22,7 @@ def create_dico(path):
     keys = attributs[1]
     stats_total = attributs[-1]
     data = attributs[2:-1]
-    # On supprime la ligne vide
+    # We delete the empty line
     for i in range(len(data)):
         if len(data[i]) == 1:
             del data[i]
@@ -52,31 +52,24 @@ def merge_list_dicos(dico_list: list):
         accumulator = merge_dicos(accumulator, dico_list[i])
     return accumulator
 
-# Attention, cette fonction fait
-# uniquement la somme un à un de 
-# chaque valeur du tableau pour
-# chaque clé
-# si l'on veut rajouter une opération
-# contacter le service après vente
+# This function only sums the values for each key
 def merge_dicos(dico1, dico2):
     res = {}
-    # On s'assure que les deux dicos
-    # ont des éléments de même taille
+    # We make sure that each dico is the same size
     for v1, v2 in zip(dico1.values(), dico2.values()):
         if len(v1) != len(v2):
             raise Exception("Uncompatible dicos")
-    # on récupère la taille du tableau de valeurs
+    # We retrieve the size of the table of values
     all_keys = dico1.keys() | dico2.keys()
     for k in all_keys:
-        # si la key est dans les deux dico, on somme
+        # if the key is on both tables, we make a sum
         if k in dico1.keys() and k in dico2.keys():
             res[k] = [v1 + v2 for v1, v2 in zip(dico1[k], dico2[k])]
-        # si la key est uniquement dans le premier
-        # on ne met que ses valeurs à lui
+        # if the key is only in the first one
+        # we only keep the value in the first dico
         elif k in dico1.keys():
             res[k] = dico1[k]
-        # sinon la key est forcément uniquement
-        # dans le deuxième et on update les valeurs
+        # else, the key is in the second dico
         else:
             res[k] = dico2[k]
     return res
@@ -85,4 +78,5 @@ def average_dico(dico, round_val=3):
     average_dico = {}
     for key, tab_value in dico.items():
         average_dico[key] = round(tab_value[0] / tab_value[1], round_val)
+    print(dico)
     return average_dico

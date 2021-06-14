@@ -1,0 +1,9 @@
+Fri Feb 12 18:46:53 2021
+Sound File	Stimulus	Vowel	FirstResponse	Response Time	NbErreurs	Repetitions
+I_mean_F09	mean	I	I	8.353883898700588	0	0
+a_pat_F06	pat	a	a	3.591620051767677	0	0
+I_bean_H05	bean	I	I	2.6308469685027376	0	0
+A_carp_F04	carp	A	A	3.1774461014429107	0	0
+I_beak_F04	beak	I	i	1.9454940191935748	1	0
+
+#TotalErreurs#1#TempsTotal#34sec

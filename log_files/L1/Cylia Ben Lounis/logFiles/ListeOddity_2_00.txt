@@ -1,0 +1,34 @@
+#00#Wed Jun  2 20:56:00 2021#ListeOddity_2.txt
+Vowel	Sound Files	Response	FirstResponse	Result	Response Time	NbErreurs	nbRepetitions
+i_kip_F07-I_keep_F04-i_kip_F06	I	2	2	1	0.638136919005774	0	2
+i_tick_F08-I_teak_F06-i_tick_F09	I	2	2	1	0.048765411018393934	0	2
+i_tick_F08-i_tick_F05-I_teak_F04	I	3	3	1	0.9234878440038301	0	2
+v_tut_H05-a_tat_H08-v_tut_H06	a	2	2	1	1.509066961996723	0	1
+I_teak_F07-i_tick_F05-i_tick_F08	I	1	1	1	0.5096952870371751	0	4
+A_cart_F06-v_cut_F04-A_cart_F09	v	2	2	1	0.4610920560080558	0	1
+v_tut_F09-v_tut_F05-a_tat_F06	a	3	3	1	1.6714569589821622	0	0
+v_cut_F04-v_cut_F05-A_cart_F09	A	3	3	1	1.1755294350441545	0	0
+a_tat_F04-v_tut_F06-a_tat_F09	v	2	2	1	0.5011348539846949	0	0
+i_tick_H08-i_tick_H05-I_teak_H04	I	3	3	1	1.1930277459905483	0	0
+v_puck_H04-v_puck_H08-A_park_H06	A	3	3	1	0.45916271302849054	0	1
+v_puck_F04-v_puck_F09-a_lack_F06	a	3	3	1	1.0902070680167526	0	1
+A_cart_H06-v_cut_H04-A_cart_H09	v	2	2	1	1.57498808397213	0	2
+a_cad_F07-v_cud_F09-v_cud_F05	a	1	2	0	0.6102696539601311	2	0
+v_cud_F09-A_card_F08-v_cud_F05	A	2	2	1	0.4864474830101244	0	1
+i_sick_F08-i_sick_F09-I_seek_F06	I	3	3	1	3.4018968250020407	0	0
+v_cut_F08-a_cat_F07-a_cat_F04	v	1	1	1	0.5685316069866531	0	3
+A_park_F05-A_park_F04-v_puck_F08	v	3	3	1	0.4731856500147842	0	1
+v_tut_F08-a_tat_F09-a_tat_F04	v	1	1	1	1.1644566170289181	0	2
+v_cut_F06-v_cut_F09-a_cat_F08	a	3	3	1	2.674658599018585	0	0
+I_keep_H06-i_kip_H07-I_keep_H05	i	2	2	1	2.761204504990019	0	1
+v_tut_H08-a_tat_H09-a_tat_H04	v	1	1	1	0.8299185379873961	0	0
+v_puck_H05-a_lack_H04-a_lack_H08	v	1	1	1	0.2977233370183967	0	1
+i_sick_F04-I_seek_F05-i_sick_F09	I	2	2	1	0.8927814940107055	0	1
+v_tut_F05-A_tart_F08-A_tart_F06	v	1	1	1	0.436251999984961	0	1
+I_keep_F05-I_keep_F08-i_kip_F04	i	3	3	1	0.5808252010028809	0	1
+v_puck_H05-a_lack_H06-v_puck_H07	a	2	2	1	1.1109554340364411	0	0
+a_lack_H06-v_puck_H04-v_puck_H09	a	1	1	1	0.4866023669601418	0	1
+i_pick_H05-i_pick_H08-I_peak_H04	I	3	3	1	2.0111912270076573	0	5
+A_tart_F07-v_tut_F05-v_tut_F09	A	1	1	1	1.0691352100111544	0	2
+
+#TotalErreurs#2TempsTotal#5min 27sec
