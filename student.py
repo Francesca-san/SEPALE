@@ -8,7 +8,7 @@ from exo import *
 from utils import *
 
 
-def get_files_directory(directory, pattern="AFC"):
+def get_files_directory(directory, pattern="AFC", pattern2="AX"):
     if directory[-1] != "/":
         directory += "/"
     return [directory + file for file in os.listdir(directory) if  pattern in file]
@@ -33,6 +33,7 @@ class Student:
         #self.file = file 
         # All students have done exercises
         self.create_exos()
+        #self.arr = []
         
     def get_name(self):
         # Parse the base path to get the names
@@ -55,7 +56,8 @@ class Student:
         # There are two elements in this association:
         # a pattern (ex: "2AFC"), and the Class it belongs to (ex: AFC2)
         assos = [("2AFC", AFC2),
-                 ("5AFC", AFC5)]
+                 ("5AFC", AFC5),
+                 ("AX", AX)]
         exos = []
         # For each pattern and class (cl) in the association
         for pattern, cl in assos:
@@ -116,7 +118,6 @@ class Student:
             labels = np.array(list(dico.keys()))
             values = np.array(list(dico.values()))[:,0]
             print(exo.path)
-
             plot_chart(labels, values, title)
             
     def hist_all_exos(self, key, criteria, title, xlabel, ylabel, xrotation=None, yrotation=None):
@@ -124,9 +125,14 @@ class Student:
             dico = exo.criteria_by_key(key, criteria)
             labels = np.array(list(dico.keys()))
             values = np.array(list(dico.values()))[:,0]
-            print(exo.path)
-            plot_hist(labels, values, title, xlabel, ylabel, xrotation=xrotation, yrotation=yrotation)
             
+            sel_arr = values != 0
+            if np.all(sel_arr == False):
+                pass
+            else:
+                print(exo.path)
+                plot_hist(labels[sel_arr], values[sel_arr], title, xlabel, ylabel, xrotation=xrotation, yrotation=yrotation)
+
     
     def plot_table_by_key(self, key, xscale=0.5, yscale=4):
         criterias = np.array(["Repetitions", "NbErreurs",  "Response Time"])
@@ -156,3 +162,4 @@ class Student:
             row_values.append(values)
         row_values = np.array(row_values)
         plot_table(row_labels, criterias, row_values.T, xscale=xscale, yscale=yscale)
+        

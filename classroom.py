@@ -52,7 +52,6 @@ class Classroom:
             # are the ones we've just retrieved
             labels = np.array(list(dico.keys()))
             values = np.array(list(dico.values()))
-            
             if row_labels is None:
                 row_labels = labels
             # If we know them, we check that those that
@@ -68,3 +67,4 @@ class Classroom:
         row_values = np.array(row_values)
         plot_table(row_labels, criterias, row_values.T, xscale=xscale, yscale=yscale)
         
+    

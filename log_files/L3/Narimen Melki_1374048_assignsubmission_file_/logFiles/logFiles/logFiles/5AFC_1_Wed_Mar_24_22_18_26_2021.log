@@ -1,0 +1,34 @@
+Wed Mar 24 22:18:26 2021
+Sound File	Stimulus	Vowel	FirstResponse	Response Time	NbErreurs	Repetitions
+i_lick_F07	lick	i	i	6.3356451988220215	0	0
+A_carp_H08	carp	A	A	3.102919101715088	0	0
+I_beak_F06	beak	I	I	10.77079176902771	0	0
+i_chip_H05	chip	i	i	2.3291468620300293	0	0
+v_mutt_F05	mutt	v	a	0.19989800453186035	1	0
+I_leak_F09	leak	I	I	2.1283211708068848	0	0
+v_putt_F06	putt	v	a	2.215864896774292	1	0
+i_chip_F06	chip	i	i	1.9972851276397705	0	0
+I_cheap_F04	cheap	I	I	1.4771478176116943	0	0
+a_mat_F05	mat	a	v	0.5795989036560059	1	0
+i_min_F07	min	i	i	1.933091163635254	0	0
+a_lack_F04	lack	a	v	0.5870368480682373	3	0
+i_lick_F09	lick	i	i	3.212322950363159	0	0
+I_beak_H09	beak	I	I	2.2314841747283936	0	0
+v_cup_H07	cup	v	v	2.7180192470550537	0	0
+v_luck_F07	luck	v	v	4.030919313430786	0	0
+I_beak_H06	beak	I	I	1.4322266578674316	0	0
+v_buck_H04	buck	v	v	8.664601802825928	0	0
+A_lark_H07	lark	A	A	1.8554630279541016	0	0
+v_putt_H04	putt	v	a	0.5056431293487549	1	0
+a_mat_H05	mat	a	v	0.11639189720153809	1	0
+i_bin_F06	bin	i	i	2.6819090843200684	0	0
+a_lack_F07	lack	a	a	6.472233772277832	0	0
+a_cap_F05	cap	a	v	0.41774892807006836	1	0
+I_leak_F04	leak	I	I	2.7830300331115723	0	0
+I_beak_F07	beak	I	I	3.231072187423706	0	0
+v_mutt_F04	mutt	v	v	2.767498016357422	0	0
+A_carp_H05	carp	A	A	2.714768886566162	0	0
+I_mean_F05	mean	I	I	1.5056569576263428	0	0
+i_min_H04	min	i	i	1.9226601123809814	0	0
+
+#TotalErreurs#9#TempsTotal#3min 27sec
