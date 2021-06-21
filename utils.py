@@ -13,11 +13,9 @@ def create_dico(path):
     # Delete \n
     for i in range(len(lines)):
         lines[i] = lines[i].replace("\n", "")
-        
     attributs = []
     for l in lines:
         attributs.append(l.split('\t'))
-        
     date = attributs[0]
     keys = attributs[1]
     stats_total = attributs[-1]
