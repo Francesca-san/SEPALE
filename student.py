@@ -8,7 +8,7 @@ from exo import *
 from utils import *
 
 
-def get_files_directory(directory, pattern="AFC", pattern2="AX"):
+def get_files_directory(directory, pattern="AFC", pattern2="AX", pattern3="Oddity"):
     if directory[-1] != "/":
         directory += "/"
     return [directory + file for file in os.listdir(directory) if  pattern in file]
@@ -57,7 +57,8 @@ class Student:
         # a pattern (ex: "2AFC"), and the Class it belongs to (ex: AFC2)
         assos = [("2AFC", AFC2),
                  ("5AFC", AFC5),
-                 ("AX", AX)]
+                 ("AX", AX),
+                 ("Oddity", Oddity)]
         exos = []
         # For each pattern and class (cl) in the association
         for pattern, cl in assos:
@@ -74,12 +75,18 @@ class Student:
         # it is associated to its student
         self.exos = exos
         
+
     def criteria_by_key(self, key, criteria):
         res = {}
         # For each exercise, we retrieve the dictionaries
         list_dicos = []
         for exo in self.exos:
-            list_dicos.append(exo.criteria_by_key(key, criteria))
+            if key == "Vowel" and isinstance(exo, AX):
+                continue
+            elif key == "Vowel" and isinstance(exo, Oddity):
+                continue
+            else:
+                list_dicos.append(exo.criteria_by_key(key, criteria))
         return merge_list_dicos(list_dicos)
     
 
@@ -113,25 +120,27 @@ class Student:
         self.directory = current_dir
     
     def chart_all_exos(self, key, criteria, title):
-        for exo in self.exos:
-            dico = exo.criteria_by_key(key, criteria)
-            labels = np.array(list(dico.keys()))
-            values = np.array(list(dico.values()))[:,0]
-            print(exo.path)
-            plot_chart(labels, values, title)
+        dico = self.criteria_by_key(key, criteria)
+        labels = np.array(list(dico.keys()))
+        values = np.array(list(dico.values()))[:,0]
+        sel_arr = values != 0
+        if np.all(sel_arr == False):
+            pass
+        else:
+            plot_chart(labels[sel_arr], values[sel_arr], title)
             
     def hist_all_exos(self, key, criteria, title, xlabel, ylabel, xrotation=None, yrotation=None):
-        for exo in self.exos:
-            dico = exo.criteria_by_key(key, criteria)
-            labels = np.array(list(dico.keys()))
-            values = np.array(list(dico.values()))[:,0]
-            
-            sel_arr = values != 0
-            if np.all(sel_arr == False):
-                pass
-            else:
-                print(exo.path)
-                plot_hist(labels[sel_arr], values[sel_arr], title, xlabel, ylabel, xrotation=xrotation, yrotation=yrotation)
+        dico = self.criteria_by_key(key, criteria)
+        labels = np.array(list(dico.keys()))
+        values = np.array(list(dico.values()))[:,0]
+        # This line makes it possible to only
+        # display the keys for which at least
+        # one mistake has been done by the student
+        sel_arr = values != 0
+        if np.all(sel_arr == False):
+            pass
+        else:
+            plot_hist(labels[sel_arr], values[sel_arr], title, xlabel, ylabel, xrotation=xrotation, yrotation=yrotation)
 
     
     def plot_table_by_key(self, key, xscale=0.5, yscale=4):
@@ -147,7 +156,6 @@ class Student:
             # are the ones we've just retrieved
             labels = np.array(list(dico.keys()))
             values = np.array(list(dico.values()))
-            
             if row_labels is None:
                 row_labels = labels
             # If we know them, we check that those that
@@ -162,4 +170,4 @@ class Student:
             row_values.append(values)
         row_values = np.array(row_values)
         plot_table(row_labels, criterias, row_values.T, xscale=xscale, yscale=yscale)
-        
+

@@ -94,7 +94,7 @@ class Exo:
             raise Exception('Key not in my keys !')
         if criteria not in self.keys:
             raise Exception('Criteria not in my keys !')
-            
+        #labels, values = exo.criteria_by_key(key, criteria)
         # We retrieve the index number of the key/column
         k_index = self.key_to_index[key]
         # We retrieve the index number of the criteria/column
@@ -102,7 +102,6 @@ class Exo:
         # We retrieve the columns
         key_column = self.columns[k_index]
         criteria_column = self.columns[c_index]
-        
         dico = {}
         # For each key, we keep aside its 
         # value and we count the number of 
@@ -116,7 +115,6 @@ class Exo:
                 dico[k] = [dico[k][0] + value, dico[k][1] + 1]
         # We return the dictionary
         return dico
-    
     
         
 # We define a specific type of exercise: the 2AFC
@@ -198,39 +196,68 @@ class AX(Exo):
                 columns.append(np.array([float(data[i][j]) for i in range(len(data))]))
             else:
                 columns.append(np.array([data[i][j] for i in range(len(data))]))
-        
         self.columns = columns
         # Pour ne pas perdre ses clés !
         self.key_to_index = {}
         for i, k in enumerate(self.keys):
             self.key_to_index[k] = i
 
-    def plot_table_by_key(self, key="Stimulus", xscale=0.5, yscale=4):
-        criterias = np.array(["Repetitions", "NbErreurs",  "Response Time"])
-        row_values = []
-        # At the beginning we don't know
-        # the labels of the lines
-        row_labels = None
-        for criteria in criterias:
-            dico = average_dico(self.criteria_by_key(key="Stimulus", criteria=criteria))
-            # If we don't know the labels of the lines
-            # at this round, the labels of the lines
-            # are the ones we've just retrieved
-            labels = np.array(list(dico.keys()))
-            values = np.array(list(dico.values()))
-            
-            if row_labels is None:
-                row_labels = labels
-            # If we know them, we check that those that
-            # we've just retrieved are the same
-            else:
-                for i in range(len(labels)):
-                    if row_labels[i] != labels[i]:
-                        # If they are not the same, a 
-                        # message of error is raised
-                        raise Exception("Uncompatible labels")
-            # We add the lines of the table
-            row_values.append(values)
-        row_values = np.array(row_values)
-        plot_table(row_labels, criterias, row_values.T, xscale=xscale, yscale=yscale)
+# We define a new class called "Oddity"
+class Oddity(Exo):
+    '''
+    This is a description of the class, 
+    If you have any problem with it
+    you can always write help(Oddity)
+    '''
     
+    def __init__(self, path):
+        # Here we define the shared attributes of all the exercises
+        # They all have a path
+        super().__init__(path)
+        
+    def parse_lines(self):
+        attributs = []
+        # We separate lines according to the tabulation
+        for l in self.lines:
+            attributs.append(l.split('\t'))
+        # The date is the first line -> 0
+        date = attributs[0]
+        # The keys are the second line --> 1
+        self.keys = np.array(['Sound File', 'Stimulus','Response Time', 'NbErreurs', 'Repetitions'])
+        # The data is to be found from the third
+        # line (2) to the antepenultimate (-2) (empty line at end)
+        data_tmp = attributs[2:-2]
+        data = []
+        for l in data_tmp:
+            # splitting soudfile string
+            sf = l[0]
+            #re.split = ('-|, _', sf)
+            #sleft = re.split[0]
+            #smiddle = re.split[1]
+            #sright = re.split[2]
+            #vs = sleft[1] + " vs " + smiddle [1] + " vs " + sright[0]
+            splitted = sf.split('-')
+            sleft = splitted[0].split('_')
+            smiddle = splitted[1].split('_')
+            sright = splitted[2].split('_')
+            vs = sleft[1] + " vs " + smiddle [1] + " vs " + sright[1]
+            #print(vs)
+            # do not take care of the three
+            # following columns
+            data.append([sf, vs, l[5], l[6], l[7]])
+        # The last line is the number of mistakes
+        # and repetitions --> stats_total
+        stats_total = attributs[-1]
+        columns = []
+        for j, k in enumerate(self.keys):
+            if k in self.numeric_keys:
+                columns.append(np.array([float(data[i][j]) for i in range(len(data))]))
+            else:
+                columns.append(np.array([data[i][j] for i in range(len(data))]))
+        self.columns = columns
+        #print(data)
+        # Pour ne pas perdre ses clés !
+        self.key_to_index = {}
+        for i, k in enumerate(self.keys):
+            self.key_to_index[k] = i
+            

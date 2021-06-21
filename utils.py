@@ -78,5 +78,5 @@ def average_dico(dico, round_val=3):
     average_dico = {}
     for key, tab_value in dico.items():
         average_dico[key] = round(tab_value[0] / tab_value[1], round_val)
-    print(dico)
+    #print(dico)
     return average_dico
