@@ -4,6 +4,7 @@ from student import Student
 from utils import merge_list_dicos, average_dico
 from graphs import plot_table
 
+# We define a new class called "Classroom"
 class Classroom:
     '''
     This is a description of the class, 
@@ -11,17 +12,35 @@ class Classroom:
     you can always write help(Classroom)
     '''
     
+    # This is the initializing function of any exercise
+    # It has only one argument, called "path"
     def __init__(self, base):
+        # Here we define the shared attributes of all the students
+        # They all have a path, the base of the directory
         self.base = base
+        # A classroom contains several students
         self.create_students()
         
-            
+    # As this function is in the __init__ function, 
+    # it means that the function will start  
+    # any time the class Classroom is called.        
     def create_students(self):
+        # in order to avoid error message, we
+        # ask the function to add a slash 
+        # to the base if there is none.
         if self.base[-1] != "/":
             self.base += "/"
+        # we create an empty list
         self.student_list = []
+        # list_students corresponds 
+        # to all the elements in base
         list_students = os.listdir(self.base)
+        # for the path of a student in the list
         for student_path in list_students:
+            # a student is an instance which belongs
+            # to the class Student which has one attribute,
+            # base (or path). The path is the base and
+            # the path to the student's exercises.
             student = Student(self.base + student_path)
             self.student_list.append(student)
             
@@ -29,12 +48,18 @@ class Classroom:
         res = {}
         # For each exercise, we retrieve the dictionaries
         list_dicos = []
+        # for a student in the list of students
         for student in self.student_list:
+            # we add to the empty list the 
+            # results of their criteria by key
             list_dicos.append(student.criteria_by_key(key, criteria))
         return merge_list_dicos(list_dicos)
     
+    
     def print_names(self):
+        # for a student in the list of students
         for student in self.student_list:
+            # we show their name and surname
             print(student.name, student.surname, f"({len(student.exos)} exercises)")
                 
         

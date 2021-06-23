@@ -1,51 +1,102 @@
 from utils import create_dico
 #['Sound File', 'Stimulus', 'Vowel', 'FirstResponse', 'Response Time', 'NbErreurs', 'Repetitions', 'date']
+
+# This function displays the keys for which an error was made. We
+# can notice that a key is already specified, this means that you
+# can modify it when you call the function, but if you do not 
+# specify it, then the key will automatically be "Stimulus".
+# Same goes for the attributes at_least.
 def with_errors(dico, key='Stimulus', at_least=1):
+    # we create an empty list
     result = []
+    # for the variables i and val
+    # in the dictionary "NbErreurs"
     for i, val in enumerate(dico['NbErreurs']):
+        # if the value is superior or equal
+        # to the value of at_least
         if val >= at_least:
+            # we add the value to the dictionary
             result.append(dico[key][i])
+    # we return the result
     return result
 
+# This function counts the errors
 def count_errors(dico, key='Stimulus', count_one=False):
+    # we create an empty dictionary
     result = {}
+    # for the variables i and val
+    # in the dictionary "NbErreurs"
     for i, val in enumerate(dico['NbErreurs']):
+        # if the key is not in result.key
         if dico[key][i] not in result.keys():
+            # the value 0 is given to the dictionary
             result[dico[key][i]] = 0
+        # if value is superior to 0
         if val > 0:
+            # and count_one = True
             if count_one:
+                # then we only add 1 to the 
+                # dictionary, no matter the value
                 result[dico[key][i]] += 1
+            # if count_one = False
             else:
+                # we add the value to the dictionary
                 result[dico[key][i]] += val
     return result
 
+# this functions counts a criterion per vowel
 def count_with_criteria(dico, key='Vowel', criteria='Response Time', count_one=False):
+    # we create an empty dictionary
     result = {}
+    # we define what a criterion can be
     assert criteria in ['NbErreurs', 'Repetitions', 'Response Time']
+    # for the variables i and val
+    # in the dictionary of criteria
     for i, val in enumerate(dico[criteria]):
+        # if the key is not in result.key
         if dico[key][i] not in result.keys():
+            # the value 0 is given to the dictionary
             result[dico[key][i]] = 0
+        # if value is superior to 0
         if val > 0:
+            # and count_one = True
             if count_one:
+                # then we only add 1 to the 
+                # dictionary, no matter the value
                 result[dico[key][i]] += 1
+            # if count_one = False
             else:
+                # we add the value to the dictionary
                 result[dico[key][i]] += val
     return result
 
-
+# this function shows the words for which no error was made.
 def with_no_errors(dico, key='Stimulus'):
+    # we create an empty list
     result = []
+    # for the variables i and val
+    # in the dictionary "NbErreurs"
     for i, val in enumerate(dico['NbErreurs']):
+        # if he value is strictly equal to 0
         if val == 0:
+            # we add the value to the dictionary
             result.append(dico[key][i])
     return result
 
+# this function counts the number of right answers
 def count_right(dico, key='Stimulus'):
+    # we create an empty dictionary
     result = {}
+    # for the variables i and val
+    # in the dictionary "NbErreurs"
     for i, val in enumerate(dico['NbErreurs']):
+        # if the key is not in result.key
         if dico[key][i] not in result.keys():
+            # the value 0 is given to the dictionary
             result[dico[key][i]] = 0
+        # if he value is strictly equal to 0
         if val == 0:
+            # we add the value to the dictionary
             result[dico[key][i]] += 1
     return result
 

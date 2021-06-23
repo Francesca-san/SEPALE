@@ -91,9 +91,9 @@ class Exo:
     
     def criteria_by_key(self, key, criteria, zeros=False):
         if key not in self.keys:
-            raise Exception('Key not in my keys !')
+            raise Exception('Key not in my keys!')
         if criteria not in self.keys:
-            raise Exception('Criteria not in my keys !')
+            raise Exception('Criteria not in my keys!')
         #labels, values = exo.criteria_by_key(key, criteria)
         # We retrieve the index number of the key/column
         k_index = self.key_to_index[key]
@@ -215,6 +215,34 @@ class Oddity(Exo):
         # They all have a path
         super().__init__(path)
         
+    def clean_lines(self):
+        # We remove the \n that are then replaced
+        # by a space. \n are line breaks.
+        for i in range(len(self.lines)):
+            self.lines[i] = self.lines[i].replace("\n", "")
+        # If the line is empty, we delete it.
+        # We make a list which contains all the 
+        # empty lines (= to_delete.append(i))
+        to_delete = []
+        print(len(self.lines))
+        for i in range(len(self.lines)):
+            # Oddity files contains empty lines
+            # that we should remove
+            if len(self.lines[i]) == 0:
+                to_delete.append(i)
+            # After the second line
+            if i > 2:
+                if "#" in self.lines[i]:
+                    to_delete.append(i)
+                if "Vowel" in self.lines[i]:
+                    to_delete.append(i)
+        # then we delete (del) what has been
+        # added in to_delete
+        self.lines = [self.lines[i] for i in range(len(self.lines)) if i not in to_delete]  
+        #for l in self.lines:
+        #    print(l)
+        
+        
     def parse_lines(self):
         attributs = []
         # We separate lines according to the tabulation
@@ -231,16 +259,18 @@ class Oddity(Exo):
         for l in data_tmp:
             # splitting soudfile string
             sf = l[0]
-            #re.split = ('-|, _', sf)
-            #sleft = re.split[0]
-            #smiddle = re.split[1]
-            #sright = re.split[2]
-            #vs = sleft[1] + " vs " + smiddle [1] + " vs " + sright[0]
             splitted = sf.split('-')
             sleft = splitted[0].split('_')
             smiddle = splitted[1].split('_')
             sright = splitted[2].split('_')
-            vs = sleft[1] + " vs " + smiddle [1] + " vs " + sright[1]
+            vs = ""
+            if len(sleft) > 2: 
+                vs += sleft[1] + " vs"
+            if len(smiddle) > 2: 
+                vs += " " + smiddle[1] + " vs"
+            if len(sright) > 2: 
+                vs += " " + sright[1]
+            #vs = sleft[1] + " vs " + smiddle [1] + " vs " + sright[1]
             #print(vs)
             # do not take care of the three
             # following columns

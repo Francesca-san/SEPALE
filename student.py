@@ -21,19 +21,19 @@ class Student:
     you can always write help(Student)
     '''
 
+    # This is the initializing function of any exercise
+    # It has only one argument, called "path"
     def __init__(self, base):
         # Here we define the shared attributes of all the students
         # They all have a path, the base of the directory
         self.base = base
-        # We search for the directory that contains the logfiles
-        # since they all have logfiles
+        # We search for the directory that contains 
+        # the logfiles since they all have logfiles
         self.find_log_dir()
         # All the students have names that we want to retrieve
         self.get_name()
-        #self.file = file 
         # All students have done exercises
         self.create_exos()
-        #self.arr = []
         
     def get_name(self):
         # Parse the base path to get the names
@@ -80,31 +80,50 @@ class Student:
         res = {}
         # For each exercise, we retrieve the dictionaries
         list_dicos = []
+        # for each exercise in the class Exo
         for exo in self.exos:
+            # if the key is designed as "Vowel" and 
+            # the exercise is an AX (subclass of Exo)
             if key == "Vowel" and isinstance(exo, AX):
+                # we continue the loop and 
+                # don't treat the exercise
                 continue
+            # else/if the key is "Vowel" and 
+            # the exercise is an Oddity
             elif key == "Vowel" and isinstance(exo, Oddity):
+                # we continue the loop and 
+                # don't treat the exercise
                 continue
+            # if it's none of them
             else:
+                # we add to the empty list the 
+                # results of their criteria by key
                 list_dicos.append(exo.criteria_by_key(key, criteria))
         return merge_list_dicos(list_dicos)
     
-
+    
+    # This function is very useful to avoid making
+    # different functions for each particular case.
+    # Whether the directory has 0, 1 or 2 "logFiles"
+    # files, the function will continue digging,
+    # exploring, until it finds the logfiles.
     def find_log_dir(self):
         if self.base[-1] != "/":
             self.base += "/"
         continue_exploring = True
+        # the current directory is the path, or 
+        # the base given when calling the function.
         current_dir = self.base
         # While we haven't reached the end of the exploration
         while continue_exploring:
             # We retrieve the tree view under the file
             extended_list = os.listdir(current_dir)
-            # We check the number of elements in the tree view
-            # If there is only one element
+            # We check the number of elements in the 
+            # tree view, if there is only one element
             if len(extended_list) == 1 and os.path.isdir(current_dir + extended_list[0]):
-                # We check that it is a file before proceeding.
-                # We concatenate the path of the new file with
-                # the previous file so that the exploration can resume.
+                # We check that it is a file before proceeding. We
+                # concatenate the path of the new file with the
+                # previous file so that the exploration can resume.
                 current_dir = current_dir + extended_list[0] + '/'
                 continue_exploring = True  
             # If there are several elements
