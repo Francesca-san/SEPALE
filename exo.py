@@ -1,6 +1,8 @@
 # We import python modules
 # numpy : a mathematical function that is very useful!
 import numpy as np
+import matplotlib.pyplot as plt
+
 
 
 # We define a new class called "Exo"
@@ -115,6 +117,63 @@ class Exo:
                 dico[k] = [dico[k][0] + value, dico[k][1] + 1]
         # We return the dictionary
         return dico
+    
+    def hist_all_exos(self, key, criteria, title, xlabel, ylabel, xrotation=None, yrotation=None):
+        dico = self.criteria_by_key(key, criteria)
+        labels = np.array(list(dico.keys()))
+        values = np.array(list(dico.values()))[:,0]
+        # This line makes it possible to only
+        # display the keys for which at least
+        # one mistake has been done by the student
+        sel_arr = values != 0
+        if np.all(sel_arr == False):
+            pass
+        else:
+            plot_hist(labels[sel_arr], values[sel_arr], title, xlabel, ylabel, xrotation=xrotation, yrotation=yrotation)
+
+
+    # we create a new plot function which will display two bars for two criteria.
+    # "criterias" expects a list of elements, we can give it as many as we want
+    # as long as they are in the criteria we have defined earlier.
+    def group_bar_hist(self, criterias, title, ylabel, key="Vowel"):
+        # we create an empty list
+        values_arr = []
+        # for a criteria is the list of criterias
+        for criteria in criterias:
+            # we create a dictionary thanks to criteria_by_key
+            dico = self.criteria_by_key(key, criteria)
+            labels = np.array(list(dico.keys()))
+            values = np.array(list(dico.values()))
+            # We add the proportion, the first 
+            # element is divided by the second
+            values_arr.append(values[:,0] / values[:,1])
+        
+        fig, ax = plt.subplots()
+        x = np.arange(labels.shape[0])    # the x locations for the labels
+        width = (1 / len(criterias)) - 0.1 # the width of the bars
+        
+        offsets = np.arange(-0.5, 0.5, width) + 0.30
+        for i, values in enumerate(values_arr):
+            print(criterias[i])
+            print(x + offsets[i], values)
+            # We skip the occurrences
+            ax.bar(x + offsets[i], values, width, label=criterias[i])
+
+        ax.set_title(title)
+        ax.set_xticks(x)
+        ax.set_xticklabels(labels)
+        ax.legend()
+        plt.ylabel(ylabel)
+        ax.autoscale_view()
+        plt.show()
+    
+    
+    def hist_by_key(key, criteria, title, xlabel, ylabel, xrotation=None):
+        dico = exo.criteria_by_key(key, criteria)
+        labels = np.array(list(dico.keys()))
+        values = np.array(list(dico.values()))[:,0]
+        plt.plot(labels, values)
+        plt.show
     
         
 # We define a specific type of exercise: the 2AFC

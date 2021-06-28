@@ -2,7 +2,7 @@ import os
 import numpy as np
 from student import Student
 from utils import merge_list_dicos, average_dico
-from graphs import plot_table
+from graphs import *
 
 # We define a new class called "Classroom"
 class Classroom:
@@ -92,4 +92,27 @@ class Classroom:
         row_values = np.array(row_values)
         plot_table(row_labels, criterias, row_values.T, xscale=xscale, yscale=yscale)
         
-    
+    def hist_all_exos(self, key, criteria, title, xlabel, ylabel, xrotation=None, yrotation=None):
+        dico = average_dico(self.criteria_by_key(key, criteria))
+        labels = np.array(list(dico.keys()))
+        values = np.array(list(dico.values()))
+        #values = np.array(list(dico.values()))[:,0]
+        # This line makes it possible to only
+        # display the keys for which at least
+        # one mistake has been done by the student
+        sel_arr = values != 0
+        if np.all(sel_arr == False):
+            pass
+        else:
+            plot_hist(labels[sel_arr], values[sel_arr], title, xlabel, ylabel, xrotation=xrotation, yrotation=yrotation)
+
+    def chart_all_exos(self, key, criteria, title):
+        dico = average_dico(self.criteria_by_key(key, criteria))
+        labels = np.array(list(dico.keys()))
+        values = np.array(list(dico.values()))
+        #values = np.array(list(dico.values()))[:,0]
+        sel_arr = values != 0
+        if np.all(sel_arr == False):
+            pass
+        else:
+            plot_chart(labels[sel_arr], values[sel_arr], title)

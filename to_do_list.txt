@@ -8,7 +8,7 @@ TO DO:
     
     - Parse Oddity according to # and "Vowel" --> OK
     
-    - Add comments and explanations
+    - Add comments and explanations --> Meh
     
     - Add other mathematical tools
     
@@ -17,3 +17,7 @@ TO DO:
     - Change parameters of the graphs to make it easier to read
     
     - Understand the error for the L3 and make changes to fix it --> OK
+    
+    - Add a multi bar hist for several criteria --> OK
+    
+    - Make a plot for a certain vowel throughout the semester to see evolution (if any)

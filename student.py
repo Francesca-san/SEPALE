@@ -102,6 +102,7 @@ class Student:
         return merge_list_dicos(list_dicos)
     
     
+    
     # This function is very useful to avoid making
     # different functions for each particular case.
     # Whether the directory has 0, 1 or 2 "logFiles"
@@ -160,7 +161,7 @@ class Student:
             pass
         else:
             plot_hist(labels[sel_arr], values[sel_arr], title, xlabel, ylabel, xrotation=xrotation, yrotation=yrotation)
-
+            
     
     def plot_table_by_key(self, key, xscale=0.5, yscale=4):
         criterias = np.array(["Repetitions", "NbErreurs",  "Response Time"])
@@ -189,4 +190,38 @@ class Student:
             row_values.append(values)
         row_values = np.array(row_values)
         plot_table(row_labels, criterias, row_values.T, xscale=xscale, yscale=yscale)
+        
+        
+    def group_bar_hist(self, criterias, title, ylabel, xrotation=None, key="Vowel"):
+        # we create an empty list
+        values_arr = []
+        # for a criteria is the list of criterias
+        for criteria in criterias:
+            # we create a dictionary thanks to criteria_by_key
+            dico = self.criteria_by_key(key, criteria)
+            labels = np.array(list(dico.keys()))
+            values = np.array(list(dico.values()))
+            # We add the proportion, the first 
+            # element is divided by the second
+            values_arr.append(values[:,0] / values[:,1])
+        
+        fig, ax = plt.subplots()
+        x = np.arange(labels.shape[0])    # the x locations for the labels
+        width = (1 / len(criterias)) - 0.1 # the width of the bars
+        
+        offsets = np.arange(-0.5, 0.5, width) + 0.30
+        for i, values in enumerate(values_arr):
+            # We skip the occurrences
+            ax.bar(x + offsets[i], values, width, label=criterias[i])
+        font1 = {'family':'serif','color':'blue','size':50}
+        font2 = {'family':'serif','color':'blue','size':30}
+        ax.set_title(title, font1)
+        ax.set_xticks(x)
+        ax.set_xticklabels(labels)
+        ax.legend(title="Criteria:")
+        plt.ylabel(ylabel, font2)
+        ax.autoscale_view()
+        if xrotation:
+            plt.tick_params(axis='x', rotation=xrotation)
+        plt.show()
 

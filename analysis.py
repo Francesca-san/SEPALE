@@ -12,7 +12,7 @@ def with_errors(dico, key='Stimulus', at_least=1):
     # for the variables i and val
     # in the dictionary "NbErreurs"
     for i, val in enumerate(dico['NbErreurs']):
-        # if the value is superior or equal
+        # if the value is greater or equal
         # to the value of at_least
         if val >= at_least:
             # we add the value to the dictionary
@@ -31,7 +31,7 @@ def count_errors(dico, key='Stimulus', count_one=False):
         if dico[key][i] not in result.keys():
             # the value 0 is given to the dictionary
             result[dico[key][i]] = 0
-        # if value is superior to 0
+        # if value is greater than 0
         if val > 0:
             # and count_one = True
             if count_one:
