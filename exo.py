@@ -122,6 +122,18 @@ class Exo:
         # We return the dictionary
         return dico
     
+    # In order to add more mathematical tools, we need 
+    # a function which will retrieve the index and the
+    # content of a column and therefore a criteria.
+    def column_criteria(self, criteria):
+        # We retrieve the index number
+        # of the criteria/column.
+        c_index = self.key_to_index[criteria]
+        # We retrieve the content of the columns
+        criteria_column = self.columns[c_index]
+        return criteria_column
+    
+    
     def hist_all_exos(self, key, criteria, title, xlabel, ylabel, xrotation=None, yrotation=None):
         dico = self.criteria_by_key(key, criteria)
         labels = np.array(list(dico.keys()))
