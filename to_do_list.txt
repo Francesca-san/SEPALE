@@ -20,4 +20,4 @@ TO DO:
     
     - Add a multi bar hist for several criteria --> OK
     
-    - Make a plot for a certain vowel throughout the semester to see evolution (if any)
+    - Make a plot for a certain vowel throughout the semester to see evolution (if any) --> OK

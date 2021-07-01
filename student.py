@@ -225,3 +225,56 @@ class Student:
             plt.tick_params(axis='x', rotation=xrotation)
         plt.show()
 
+        
+    def plot_criteria_by_date(self, key, criteria, title, xlabel, ylabel, xrotation=None):
+        # We create two empty dictionaries in order
+        # to retrieve the dictionaries for all the 
+        # exercises and keep aside the dates.
+        dicos = []
+        dates = []
+        for exo in self.exos:
+            # If the exercise is an Oddity or an AX, the function 
+            # will not treat them. As a reminder, these exercises do 
+            # not have vowels. As we greatly recommend using this 
+            # function with the key "Vowel", we create a condition: 
+            # if the exercise identifies as AX or Oddity, we move on.
+            if isinstance(exo, Oddity) or isinstance(exo, AX):
+                continue
+            # Otherwise, we append to the dicos
+            # the information retrieved.
+            dicos.append(exo.criteria_by_key(key, criteria))
+            dates.append(exo.date)
+            
+        # We sort the dicos by date 
+        dates, dicos = zip(*sorted(zip(dates, dicos)))
+        
+        # we get all the unique keys in the dicos
+        uniques = set(k for dico in dicos for k in dico.keys())
+        
+        # Now we create an array to be plotted for each key
+        values_dico = {}
+        # for each unique key
+        for k in uniques:
+            # we create an empty list which will be filled 
+            # with the k values, k being in 'uniques'
+            values_dico[k] = []
+            # We go over all dates
+            for i in range(len(dates)):
+                # if the key is inside the dico for the current exo, 
+                if k in dicos[i].keys():
+                    # we add it to values_dico
+                    values_dico[k].append(dicos[i][k][0] / dicos[i][k][1])
+                # if this key is not present in the exo, 
+                else:
+                    # then the criteria value is 0
+                    values_dico[k].append(0)
+        for k, v in values_dico.items():
+            plt.plot(v, label=k, marker='8', ms=15)
+            plt.tick_params(axis='x', rotation=90)
+            plt.xticks(ticks=range(len(dates)), labels=dates)
+            plt.legend()
+            plt.title(title)
+            plt.xlabel(xlabel)
+            plt.ylabel(ylabel)
+            print(k)
+            plt.show()

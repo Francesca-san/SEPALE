@@ -2,6 +2,7 @@
 # numpy : a mathematical function that is very useful!
 import numpy as np
 import matplotlib.pyplot as plt
+from datetime import datetime
 
 
 
@@ -62,7 +63,10 @@ class Exo:
         for l in self.lines:
             attributs.append(l.split('\t'))
         # The date is the first line -> 0
-        self.date = attributs[0]
+        #tmp = attributs[0]
+        self.date_line = attributs[0]
+     
+        #date_line = datetime
         # The keys are the second line --> 1
         self.keys = np.array(attributs[1])
         # The data is to be found from the third
@@ -158,7 +162,6 @@ class Exo:
             print(x + offsets[i], values)
             # We skip the occurrences
             ax.bar(x + offsets[i], values, width, label=criterias[i])
-
         ax.set_title(title)
         ax.set_xticks(x)
         ax.set_xticklabels(labels)
@@ -192,6 +195,15 @@ class AFC2(Exo):
         # Here, we define the attributes that are shared
         # by the AFC2 exercises, they all have a path
         super().__init__(path)
+        
+        if len(self.date_line) < 1:
+            print(self.date_line)
+            raise Exception("Invalid date format")
+        else:
+            # We create the date attribute from the corresponding line
+            tmp = self.date_line[0].split('#')[1]
+            self.date =  datetime.strptime(tmp, '%a %b %d %H:%M:%S %Y')
+
 
         
 # We define a specific type of exercise: the 5AFC
@@ -205,8 +217,16 @@ class AFC5(Exo):
     # It has only one argument, called "path"
     def __init__(self, path):
         # Here, we define the attributes that are shared
-        # by the AFC2 exercises, they all have a path
-        super().__init__(path)
+        # by the AFC5 exercises, they all have a path
+        super().__init__(path)   
+               
+        if len(self.date_line) > 1:
+            print(self.date_line)
+            raise Exception("Invalid date format")
+        else:
+            # We create the date attribute from the corresponding line
+            self.date =  datetime.strptime(self.date_line[0], '%a %b %d %H:%M:%S %Y')
+
         
 # We define a new class called "AX"
 class AX(Exo):
@@ -222,6 +242,14 @@ class AX(Exo):
         # They all have a path
         super().__init__(path)
         
+        if len(self.date_line) < 1:
+            print(self.date_line)
+            raise Exception("Invalid date format")
+        else:
+            # We create the date attribute from the corresponding line
+            tmp = self.date_line[0].split('#')[1]
+            self.date =  datetime.strptime(tmp, '%a %b %d %H:%M:%S %Y')
+        
         
     def parse_lines(self):
         attributs = []
@@ -229,7 +257,7 @@ class AX(Exo):
         for l in self.lines:
             attributs.append(l.split('\t'))
         # The date is the first line -> 0
-        date = attributs[0]
+        self.date_line = attributs[0]
         # The keys are the second line --> 1
         self.keys = np.array(['Sound File', 'Stimulus','Response Time', 'NbErreurs', 'Repetitions'])
         # The data is to be found from the third
@@ -273,6 +301,9 @@ class Oddity(Exo):
         # Here we define the shared attributes of all the exercises
         # They all have a path
         super().__init__(path)
+        #self.date = date
+        #self.datetime = datetime.strptime(self.date[1], '%a %b %d %H:%M:%S %Y')
+        #self.datetime = date_line.strptime(date, '%a %b %d %H:%M:%S %Y')
         
     def clean_lines(self):
         # We remove the \n that are then replaced
@@ -308,7 +339,7 @@ class Oddity(Exo):
         for l in self.lines:
             attributs.append(l.split('\t'))
         # The date is the first line -> 0
-        date = attributs[0]
+        self.date = attributs[0]
         # The keys are the second line --> 1
         self.keys = np.array(['Sound File', 'Stimulus','Response Time', 'NbErreurs', 'Repetitions'])
         # The data is to be found from the third
