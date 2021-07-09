@@ -163,7 +163,7 @@ class Student:
             plot_hist(labels[sel_arr], values[sel_arr], title, xlabel, ylabel, xrotation=xrotation, yrotation=yrotation)
             
     
-    def plot_table_by_key(self, key, xscale=0.5, yscale=4):
+    def plot_table_by_key(self, key, xscale=0.5, yscale=4, at_least=0.5):
         criterias = np.array(["Repetitions", "NbErreurs",  "Response Time"])
         row_values = []
         # At the beginning we don't know
@@ -176,6 +176,19 @@ class Student:
             # are the ones we've just retrieved
             labels = np.array(list(dico.keys()))
             values = np.array(list(dico.values()))
+            #for val in values:
+            #for i, val in enumerate(criteria['NbErreurs']):
+            #for i, val in values:
+            for i in range(len(values)):
+                if i >= at_least:
+                    row_values.append(values[i])
+                    #row_labels.append(labels[i])
+                    
+
+           # for val in values:
+               # if val >= at_least:
+                  #  row_values.append(val)
+                   # row_values = values
             if row_labels is None:
                 row_labels = labels
             # If we know them, we check that those that
@@ -188,8 +201,12 @@ class Student:
                         raise Exception("Uncompatible labels")
             # We add the lines of the table
             row_values.append(values)
-        row_values = np.array(row_values)
-        plot_table(row_labels, criterias, row_values.T, xscale=xscale, yscale=yscale)
+            row_values = np.array(row_values)
+            #sel_arr = values != 0
+            #if np.all(sel_arr == False):
+               # pass
+            #else:
+            plot_table(row_labels, criterias, row_values.T, xscale=xscale, yscale=yscale)
         
         
     def group_bar_hist(self, criterias, title, ylabel, xrotation=None, key="Vowel"):

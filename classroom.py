@@ -62,7 +62,19 @@ class Classroom:
             # we show their name and surname
             print(student.name, student.surname, f"({len(student.exos)} exercises)")
                 
-        
+    def with_errors(dico, key='Stimulus', at_least=1):
+    # we create an empty list
+    result = []
+    # for the variables i and val
+    # in the dictionary "NbErreurs"
+    for i, val in enumerate(dico['NbErreurs']):
+        # if the value is greater or equal
+        # to the value of at_least
+        if val >= at_least:
+            # we add the value to the dictionary
+            result.append(dico[key][i])
+    # we return the result
+    return result
 
     def plot_table_by_key(self, key, xscale=0.5, yscale=4):
         criterias = np.array(["Repetitions", "NbErreurs",  "Response Time"])
