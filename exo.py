@@ -28,6 +28,14 @@ class Exo:
         self.clean_lines()
         self.parse_lines()
         
+    def __iter__(self):
+        self.n = 0
+        return self
+
+    def __next__(self):
+        pass
+        raise StopIteration
+        
     # Here we take the function get_lines that 
     # can be used on any AFC exercise. It gets the 
     # lines of the files and reads them, hence 'r'.
@@ -100,7 +108,6 @@ class Exo:
             raise Exception('Key not in my keys!')
         if criteria not in self.keys:
             raise Exception('Criteria not in my keys!')
-        #labels, values = exo.criteria_by_key(key, criteria)
         # We retrieve the index number of the key/column
         k_index = self.key_to_index[key]
         # We retrieve the index number of the criteria/column
@@ -170,8 +177,8 @@ class Exo:
         
         offsets = np.arange(-0.5, 0.5, width) + 0.30
         for i, values in enumerate(values_arr):
-            print(criterias[i])
-            print(x + offsets[i], values)
+            #print(criterias[i])
+            #print(x + offsets[i], values)
             # We skip the occurrences
             ax.bar(x + offsets[i], values, width, label=criterias[i])
         ax.set_title(title)
@@ -326,7 +333,7 @@ class Oddity(Exo):
         # We make a list which contains all the 
         # empty lines (= to_delete.append(i))
         to_delete = []
-        print(len(self.lines))
+        #print(len(self.lines))
         for i in range(len(self.lines)):
             # Oddity files contains empty lines
             # that we should remove

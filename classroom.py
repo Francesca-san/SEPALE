@@ -1,7 +1,9 @@
 import os
 import numpy as np
+from exo import *
 from student import Student
-from utils import merge_list_dicos, average_dico
+from datetime import timedelta
+from utils import merge_list_dicos, average_dico, merge_dicos
 from graphs import *
 
 # We define a new class called "Classroom"
@@ -61,50 +63,35 @@ class Classroom:
         for student in self.student_list:
             # we show their name and surname
             print(student.name, student.surname, f"({len(student.exos)} exercises)")
-                
-    def with_errors(dico, key='Stimulus', at_least=1):
-    # we create an empty list
-    result = []
-    # for the variables i and val
-    # in the dictionary "NbErreurs"
-    for i, val in enumerate(dico['NbErreurs']):
-        # if the value is greater or equal
-        # to the value of at_least
-        if val >= at_least:
-            # we add the value to the dictionary
-            result.append(dico[key][i])
-    # we return the result
-    return result
-
-    def plot_table_by_key(self, key, xscale=0.5, yscale=4):
+            
+            
+    def plot_table_by_key(self, key, xscale=0.5, yscale=4, at_least=0, 
+                          target_criteria="NbErreurs"):
         criterias = np.array(["Repetitions", "NbErreurs",  "Response Time"])
+        c_index = np.where(criterias == target_criteria)[0][0]
         row_values = []
-        # At the beginning we don't know
-        # the labels of the lines
         row_labels = None
         for criteria in criterias:
             dico = average_dico(self.criteria_by_key(key, criteria))
-            # If we don't know the labels of the lines
-            # at this round, the labels of the lines
-            # are the ones we've just retrieved
             labels = np.array(list(dico.keys()))
             values = np.array(list(dico.values()))
             if row_labels is None:
                 row_labels = labels
-            # If we know them, we check that those that
-            # we've just retrieved are the same
             else:
                 for i in range(len(labels)):
                     if row_labels[i] != labels[i]:
-                        # If they are not the same, a 
-                        # message of error is raised
                         raise Exception("Uncompatible labels")
-            # We add the lines of the table
             row_values.append(values)
         row_values = np.array(row_values)
+        selec_arr = row_values[c_index,:] >= at_least
+        row_labels = row_labels[selec_arr]
+        #print(row_labels.shape)
+        row_values = row_values[:,selec_arr]
+        #print(row_values.shape)
         plot_table(row_labels, criterias, row_values.T, xscale=xscale, yscale=yscale)
         
-    def hist_all_exos(self, key, criteria, title, xlabel, ylabel, xrotation=None, yrotation=None):
+        
+    def hist_all_exos(self, key, criteria, title, xlabel, ylabel, xrotation=None, yrotation=None, at_least=0):
         dico = average_dico(self.criteria_by_key(key, criteria))
         labels = np.array(list(dico.keys()))
         values = np.array(list(dico.values()))
@@ -112,7 +99,8 @@ class Classroom:
         # This line makes it possible to only
         # display the keys for which at least
         # one mistake has been done by the student
-        sel_arr = values != 0
+        sel_arr = values >= at_least
+        #sel_arr = values != 0
         if np.all(sel_arr == False):
             pass
         else:
@@ -128,3 +116,81 @@ class Classroom:
             pass
         else:
             plot_chart(labels[sel_arr], values[sel_arr], title)
+            
+    def group_bar_hist(self, criterias, title, ylabel, xrotation=None, key="Vowel"):
+        values_arr = []
+        for criteria in criterias:
+            dico = self.criteria_by_key(key, criteria)
+            labels = np.array(list(dico.keys()))
+            values = np.array(list(dico.values()))
+            values_arr.append(values[:,0] / values[:,1])
+        #c_index = np.where(criterias == target_criteria)[0]
+        #values_arr = np.array(values_arr)
+        #selec_arr = values_arr[c_index,:] >= at_least
+        #values_arr = values_arr[selec_arr]
+        #values_arr = values_arr[:,selec_arr]
+        #labels = labels[selec_arr]
+        
+        fig, ax = plt.subplots()
+        x = np.arange(labels.shape[0])    # the x locations for the labels
+        width = (1 / len(criterias)) - 0.1 # the width of the bars
+        offsets = np.arange(-0.5, 0.5, width) + 0.30
+        for i, values in enumerate(values_arr):
+            ax.bar(x + offsets[i], values, width, label=criterias[i])
+        font1 = {'family':'serif','color':'k','size':20}
+        font2 = {'family':'serif','color':'k','size':15}
+        ax.set_title(title, font1)
+        ax.set_xticks(x)
+        ax.set_xticklabels(labels)
+        ax.legend(title="Criteria:")
+        plt.ylabel(ylabel, font2)
+        ax.autoscale_view()
+        if xrotation:
+            plt.tick_params(axis='x', rotation=xrotation)
+        plt.show()
+            
+            
+    def plot_criteria_by_date(self, key, criteria, title, xlabel, ylabel, xrotation=None, days=0):
+        list_exos = []
+        for student in self.student_list:
+            for exo in student.exos:
+                if isinstance(exo, Oddity) or isinstance(exo, AX):
+                    continue
+                list_exos.append(exo)          
+        list_exos.sort(key=lambda x: x.date)
+        dicos = []
+        dates = []
+        current_dico = None
+        current_date = None
+        for exo in list_exos:
+            new_cbk = exo.criteria_by_key(key, criteria)
+            new_date = exo.date
+            if current_dico is None and current_date is None:
+                current_dico, current_date = new_cbk, new_date
+            else:
+                if abs((new_date - current_date).days) <= days:
+                    current_dico = merge_dicos(current_dico, new_cbk)
+                else:
+                    dicos.append(current_dico)
+                    dates.append(current_date.date())
+                    current_dico, current_date = new_cbk, new_date
+        dicos.append(current_dico)
+        dates.append(current_date.date())        
+        uniques = set(k for dico in dicos for k in dico.keys())
+        values_dico = {}
+        for k in uniques:
+            values_dico[k] = []
+            for i in range(len(dates)):
+                if k in dicos[i].keys():
+                    values_dico[k].append(dicos[i][k][0] / dicos[i][k][1])
+                else:
+                    values_dico[k].append(0)
+        for k, v in values_dico.items():
+            plt.plot(v, label=k, marker='o', ms=6)
+            plt.tick_params(axis='x', rotation=90)
+            plt.xticks(ticks=range(len(dates)), labels=dates)
+            plt.legend()
+            plt.title(title)
+            plt.xlabel(xlabel)
+            plt.ylabel(ylabel)
+            plt.show()

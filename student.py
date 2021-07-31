@@ -149,13 +149,38 @@ class Student:
         else:
             plot_chart(labels[sel_arr], values[sel_arr], title)
             
-    def hist_all_exos(self, key, criteria, title, xlabel, ylabel, xrotation=None, yrotation=None):
+    def hist_all_exos2(self, key, criteria, title, xlabel, ylabel, xrotation=None, yrotation=None):
+        for exo in self.exos:
+            if key == "Vowel" and isinstance(exo, AX):
+                # we continue the loop and 
+                # don't treat the exercise
+                continue
+            # else/if the key is "Vowel" and 
+            # the exercise is an Oddity
+            elif key == "Vowel" and isinstance(exo, Oddity):
+                # we continue the loop and 
+                # don't treat the exercise
+                continue
         dico = self.criteria_by_key(key, criteria)
         labels = np.array(list(dico.keys()))
         values = np.array(list(dico.values()))[:,0]
         # This line makes it possible to only
         # display the keys for which at least
         # one mistake has been done by the student
+        
+        # if it's none of them
+        #else:
+        sel_arr = values != 0
+        if np.all(sel_arr == False):
+            pass
+        else:
+            plot_hist(labels[sel_arr], values[sel_arr], title, xlabel, 
+                      ylabel, xrotation=xrotation, yrotation=yrotation)
+            
+    def hist_all_exos(self, key, criteria, title, xlabel, ylabel, xrotation=None, yrotation=None):
+        dico = average_dico(self.criteria_by_key(key, criteria))
+        labels = np.array(list(dico.keys()))
+        values = np.array(list(dico.values()))
         sel_arr = values != 0
         if np.all(sel_arr == False):
             pass
@@ -163,51 +188,35 @@ class Student:
             plot_hist(labels[sel_arr], values[sel_arr], title, xlabel, ylabel, xrotation=xrotation, yrotation=yrotation)
             
     
-    def plot_table_by_key(self, key, xscale=0.5, yscale=4, at_least=0.5):
+    def plot_table_by_key(self, key, xscale=0.5, yscale=4, at_least=0, 
+                          target_criteria="NbErreurs"):
+        
         criterias = np.array(["Repetitions", "NbErreurs",  "Response Time"])
+        c_index = np.where(criterias == target_criteria)[0][0]
         row_values = []
-        # At the beginning we don't know
-        # the labels of the lines
         row_labels = None
         for criteria in criterias:
             dico = average_dico(self.criteria_by_key(key, criteria))
-            # If we don't know the labels of the lines
-            # at this round, the labels of the lines
-            # are the ones we've just retrieved
-            labels = np.array(list(dico.keys()))
-            values = np.array(list(dico.values()))
-            #for val in values:
-            #for i, val in enumerate(criteria['NbErreurs']):
-            #for i, val in values:
-            for i in range(len(values)):
-                if i >= at_least:
-                    row_values.append(values[i])
-                    #row_labels.append(labels[i])
-                    
-
-           # for val in values:
-               # if val >= at_least:
-                  #  row_values.append(val)
-                   # row_values = values
+            labels , values = np.array(list(dico.keys())), np.array(list(dico.values()))
             if row_labels is None:
                 row_labels = labels
-            # If we know them, we check that those that
-            # we've just retrieved are the same
             else:
                 for i in range(len(labels)):
                     if row_labels[i] != labels[i]:
-                        # If they are not the same, a 
-                        # message of error is raised
                         raise Exception("Uncompatible labels")
-            # We add the lines of the table
             row_values.append(values)
-            row_values = np.array(row_values)
-            #sel_arr = values != 0
-            #if np.all(sel_arr == False):
-               # pass
-            #else:
+        row_values = np.array(row_values)
+        #print(row_values.shape)
+        selec_arr = row_values[c_index,:] >= at_least
+        #print(selec_arr)
+        #print(row_labels.shape)
+        row_labels,  row_values = row_labels[selec_arr], row_values[:,selec_arr]
+        #print(row_labels)
+        if np.all(selec_arr == False):
+            pass
+        else:
             plot_table(row_labels, criterias, row_values.T, xscale=xscale, yscale=yscale)
-        
+
         
     def group_bar_hist(self, criterias, title, ylabel, xrotation=None, key="Vowel"):
         # we create an empty list
@@ -221,17 +230,17 @@ class Student:
             # We add the proportion, the first 
             # element is divided by the second
             values_arr.append(values[:,0] / values[:,1])
-        
+
         fig, ax = plt.subplots()
         x = np.arange(labels.shape[0])    # the x locations for the labels
         width = (1 / len(criterias)) - 0.1 # the width of the bars
-        
+
         offsets = np.arange(-0.5, 0.5, width) + 0.30
         for i, values in enumerate(values_arr):
             # We skip the occurrences
             ax.bar(x + offsets[i], values, width, label=criterias[i])
-        font1 = {'family':'serif','color':'blue','size':50}
-        font2 = {'family':'serif','color':'blue','size':30}
+        font1 = {'family':'serif','color':'k','size':20}
+        font2 = {'family':'serif','color':'k','size':15}
         ax.set_title(title, font1)
         ax.set_xticks(x)
         ax.set_xticklabels(labels)
@@ -286,12 +295,12 @@ class Student:
                     # then the criteria value is 0
                     values_dico[k].append(0)
         for k, v in values_dico.items():
-            plt.plot(v, label=k, marker='8', ms=15)
+            plt.plot(v, label=k, marker='8', ms=10)
             plt.tick_params(axis='x', rotation=90)
             plt.xticks(ticks=range(len(dates)), labels=dates)
             plt.legend()
             plt.title(title)
             plt.xlabel(xlabel)
             plt.ylabel(ylabel)
-            print(k)
+            #print(k)
             plt.show()

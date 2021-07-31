@@ -8,11 +8,11 @@ TO DO:
     
     - Parse Oddity according to # and "Vowel" --> OK
     
-    - Add comments and explanations --> Meh
+    - Add comments and explanations --> OK
     
-    - Add other mathematical tools
+    - Add other mathematical tools --> OK
     
-    - Add new class for all the classrooms combined
+    - Add new class for all the classrooms combined --> OK
     
     - Change parameters of the graphs to make it easier to read
     
@@ -21,3 +21,7 @@ TO DO:
     - Add a multi bar hist for several criteria --> OK
     
     - Make a plot for a certain vowel throughout the semester to see evolution (if any) --> OK
+    
+    - Add linear/robust regression --> alternative found
+    
+    - Add chronological scale to plot_criteria_by_date
